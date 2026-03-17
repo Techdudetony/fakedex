@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import fakemon from '../data/fakemon.json'
 import MonCard from '../components/MonCard'
 import Navbar from '../components/Navbar'
+import MonModal from '../components/MonModal'
 
 export default function Home() {
   const [search, setSearch] = useState('')
@@ -75,7 +76,7 @@ export default function Home() {
           <div
             key={mon.id}
             style={{
-              animation: `fadeInUp 0.3s ease both`,
+              animation: 'fadeInUp 0.3s ease both',
               animationDelay: `${Math.min(i * 0.02, 0.6)}s`,
             }}
           >
@@ -98,77 +99,9 @@ export default function Home() {
         </div>
       )}
 
-      {/* Modal placeholder — Phase 4 */}
+      {/* Full detail modal */}
       {selectedMon && (
-        <div
-          onClick={() => setSelectedMon(null)}
-          style={{
-            position: 'fixed', inset: 0,
-            background: 'rgba(0,0,0,0.85)',
-            zIndex: 200,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backdropFilter: 'blur(4px)',
-          }}
-        >
-          <div
-            onClick={e => e.stopPropagation()}
-            style={{
-              background: 'var(--surface)',
-              border: '1px solid var(--red)',
-              borderRadius: '12px',
-              padding: '32px',
-              maxWidth: '420px',
-              width: '90%',
-              boxShadow: '0 0 40px rgba(204,18,18,0.3)',
-            }}
-          >
-            <div style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: '2rem',
-              color: 'var(--red-bright)',
-              letterSpacing: '0.06em',
-              marginBottom: '4px',
-            }}>
-              {selectedMon.name}
-            </div>
-            <div style={{
-              fontFamily: 'var(--font-mono)',
-              fontSize: '0.65rem',
-              color: 'var(--text-dim)',
-              marginBottom: '16px',
-            }}>
-              #{selectedMon.dexNum} · {selectedMon.species}
-            </div>
-            <p style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: '0.9rem',
-              color: 'var(--text)',
-              lineHeight: 1.65,
-              fontStyle: 'italic',
-              marginBottom: '24px',
-            }}>
-              {selectedMon.dexEntry}
-            </p>
-            <button
-              onClick={() => setSelectedMon(null)}
-              style={{
-                fontFamily: 'var(--font-mono)',
-                fontSize: '0.7rem',
-                letterSpacing: '0.08em',
-                color: 'var(--text-dim)',
-                background: 'none',
-                border: '1px solid var(--border)',
-                borderRadius: '4px',
-                padding: '6px 16px',
-                cursor: 'pointer',
-              }}
-            >
-              CLOSE
-            </button>
-          </div>
-        </div>
+        <MonModal mon={selectedMon} onClose={() => setSelectedMon(null)} />
       )}
     </div>
   )

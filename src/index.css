@@ -45,7 +45,7 @@ body {
     background-image: repeating-linear-gradient(
         0deg,
         transparent,
-        tranparent 2px,
+        transparent 2px,
         rgba(255,255,255,0.012) 2px,
         rgba(255,255,255,0.012) 4px
     );
@@ -66,4 +66,14 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

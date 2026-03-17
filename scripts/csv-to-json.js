@@ -94,7 +94,7 @@ const fakemon = data
             dexEntry: clean(row['Dex Entry']),
 
             // Use the Sprite column if filled in, otherwise auto-generate the path
-            sprite: clean(row['Sprite']) || spritePath(dexNum, name),
+            sprite: clean(row['Sprite']) || `/sprites/${slugify(name)}.png`,
         }
     })
 
