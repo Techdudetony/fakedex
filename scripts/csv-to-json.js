@@ -112,6 +112,3 @@ const fakemon = data
     if (noType1.length) console.warn(`CAUTION: ${noType1.length} entries missing Type 1`)
     if (noAbility1.length) console.warn(`CAUTION: ${noAbility1.length} entries missing Ability 1`)
     if (noEntry.length) console.warn(`CAUTION: ${noEntry.length} entries missing Dex Entry`)
-
-    console.log('\n Sample Entry (first Fakemon):')
-    console.log(JSON.stringify(fakemon[0], null, 2))
