@@ -1,4 +1,5 @@
-// Stat bar colors by stat name
+import { useEffect, useState } from "react"
+
 const STAT_COLORS = {
     hp:     '#4CAF50',
     atk:    '#F44336',
@@ -17,16 +18,23 @@ const STAT_LABELS = {
     spd:    'SPD',
 }
 
-// 255 is the max any stat can be in mainline Pokemon
 const MAX_STAT = 255
 
-export default function StatBar({ statKey, value }) {
+export default function StatBar({ statKey, value, delay = 0 }) {
+    const [filled, setFilled] = useState(false)
+
+    // Start at 0 width, then trigger fill after mount + staggered delay
+    useEffect(() => {
+        const timer = setTimeout(() => setFilled(true), delay)
+        return () => clearTimeout(timer) // cleanup if component unmounts
+    }, [delay])
+
     const pct = Math.min((value / MAX_STAT) * 100, 100)
     const color = STAT_COLORS[statKey] ?? '#888'
     const label = STAT_LABELS[statKey] ?? statKey
 
     return (
-        <div style={{ 
+        <div style={{
             display: 'flex',
             alignItems: 'center',
             gap: '8px',
@@ -53,9 +61,9 @@ export default function StatBar({ statKey, value }) {
                 borderRadius: '3px',
                 overflow: 'hidden',
             }}>
-                {/* Fill - CSS transition animates on mount */}
+                {/* Fill — starts at 0, animates to full width when filled=true */}
                 <div style={{
-                    width: `${pct}%`,
+                    width: filled ? `${pct}%` : '0%',
                     height: '100%',
                     backgroundColor: color,
                     borderRadius: '3px',
