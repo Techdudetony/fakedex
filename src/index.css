@@ -1,1 +1,69 @@
 @import "tailwindcss";
+
+:root {
+    /* Brand */
+    --red:          #cc1212;
+    --red-bright:   #ff1e1e;
+    --red-dim:      #7a0a0a;
+    --blue:         #3a6fd8;
+    --blue-bright:  #5b8fff;
+    --blue-dim:     #1a3a7a;
+
+    /* Surfaces */
+    --bg:           #080808;
+    --surface:      #111111;
+    --surface-2:    #1a1a1a;
+    --border:       #2a2a2a;
+
+    /* Text */
+    --text:         #e8e8e8;
+    --text-dim:     #888888;
+    --text-faint:   #444444;
+
+    /* Fonts */
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-mono:    'DM Mono', monospace;
+    --font-body:    'Crimson Pro', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    /* Subtle scanline texture - gives the arcade CRT feel */
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        tranparent 2px,
+        rgba(255,255,255,0.012) 2px,
+        rgba(255,255,255,0.012) 4px
+    );
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar             { width: 6px; }
+::-webkit-scrollbar-track       { background: var(--bg); }
+::-webkit-scrollbar-thumb       { background: var(--red-dim); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: red; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
