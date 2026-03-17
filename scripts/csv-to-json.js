@@ -93,9 +93,8 @@ const fakemon = data
             // Flavour
             dexEntry: clean(row['Dex Entry']),
 
-            // Sprite - local path convention, matchs public/sprites filenames
-            // Rename image files to match: 001-shardactyl.png, 002-umbrisk.png etc.
-            sprite: spritePath(dexNum, name),
+            // Use the Sprite column if filled in, otherwise auto-generate the path
+            sprite: clean(row['Sprite']) || spritePath(dexNum, name),
         }
     })
 
