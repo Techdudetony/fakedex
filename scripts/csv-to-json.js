@@ -41,7 +41,7 @@ const slugify = (name) =>
 // Builds the local sprite path convention:
 // Dex #1 "Shardactyl" -> "/sprites/001-shardactyl.png"
 const spritePath = (dexNum, name) =>
-    `/sprite/${padDex(dexNum)}-${slugify(name)}.png`
+    `/sprites/${padDex(dexNum)}-${slugify(name)}.png`
 
 // Safely parses a stat float, returns 0 if missing
 const parseStat = (val) => {
@@ -95,6 +95,25 @@ const fakemon = data
 
             // Use the Sprite column if filled in, otherwise auto-generate the path
             sprite: clean(row['Sprite']) || `/sprites/${slugify(name)}.png`,
+
+            // Evolution
+            evolvesFrom: clean(row['evolvesFrom']) || null,
+            evolvesTo: clean(row['evolvesTo'])
+                ? clean(row['evolvesTo']).split(',').map(s => s.trim())
+                : [],
+            
+            // Zip evoMethod + evoMethodTo into paired objects
+            evoMethods: (() => {
+                const rawTargets = clean(row['evoMethodTo'])
+                const rawMethods = clean(row['evoMethod'])
+                if (!rawTargets) return []
+                const targets = rawTargets.split(',').map(s => s.trim()).filter(Boolean)
+                const methods = rawMethods.split(',').map(s => s.trim()).filter(Boolean)
+                return targets.map((target, i) => ({
+                    into:   target,
+                    method: methods[i] ?? null,
+                }))
+            })(),
         }
     })
 
