@@ -21,7 +21,10 @@
       "bst": 527
     },
     "dexEntry": "This ancient predator, preserved for millenia in Seaform Islands' deepest, frozen caverns, was thought to be an ice sculpture. It dives from ceilings at speeds that defy its weight. While its ice body is hard as diamond, a single blow can cause it to shatter instantly.",
-    "sprite": "/sprites/shardactyl.png"
+    "sprite": "/sprites/shardactyl.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 2,
@@ -45,7 +48,17 @@
       "bst": 265
     },
     "dexEntry": "Records recovered from the ruins of the Pokémon Mansion suggest Umbrisk were unintended byproducts of early genetic experiments. Though its eyes appear dull and lifeless, it navigates by sensing the faint warmth of nearby creatures. Its shadow sometimes moves a moment before the Pokémon itself.",
-    "sprite": "/sprites/umbrisk.png"
+    "sprite": "/sprites/umbrisk.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Basiliask"
+    ],
+    "evoMethods": [
+      {
+        "into": "Basiliask",
+        "method": "Level 32 at Night"
+      }
+    ]
   },
   {
     "id": 3,
@@ -69,7 +82,17 @@
       "bst": 460
     },
     "dexEntry": "A distorted Dragon-type said to be born from experiments in the basement of the POKÉMON MANSION. Because it is completely blind, it attacks by sensing the body heat of its opponents. Its shadow often moves independently from its body.",
-    "sprite": "/sprites/basiliask.png"
+    "sprite": "/sprites/basiliask.png",
+    "evolvesFrom": "Umbrisk",
+    "evolvesTo": [
+      "Umbrythera"
+    ],
+    "evoMethods": [
+      {
+        "into": "Umbrythera",
+        "method": "Level 55 at Night"
+      }
+    ]
   },
   {
     "id": 4,
@@ -93,7 +116,10 @@
       "bst": 600
     },
     "dexEntry": "The final result of forbidden experiments conducted beneath the Pokémon Mansion. Umbrythera has no functioning eyes, yet it hunts with frightening precision by sensing the heat of living creatures. Its shadow behaves like a separate organism, striking prey a moment before the dragon itself attacks.",
-    "sprite": "/sprites/umbrythera.png"
+    "sprite": "/sprites/umbrythera.png",
+    "evolvesFrom": "Basiliask",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 5,
@@ -117,7 +143,17 @@
       "bst": 305
     },
     "dexEntry": "Corrook collect fragments of bone and wear them as masks to frighten intruders. Though they behave playfully, they are constantly observing their surroundings. As they grow older, their focus deepens and they evolve into the silent hunter known as Tengloom.",
-    "sprite": "/sprites/corrook.png"
+    "sprite": "/sprites/corrook.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Tengloom"
+    ],
+    "evoMethods": [
+      {
+        "into": "Tengloom",
+        "method": "Level 28"
+      }
+    ]
   },
   {
     "id": 6,
@@ -141,7 +177,22 @@
       "bst": 420
     },
     "dexEntry": "It covers its face with a mask made of hardened bone. Although it appears to be meditating, its sharp claws are always ready to strike those who disturb its silence.",
-    "sprite": "/sprites/tengloom.png"
+    "sprite": "/sprites/tengloom.png",
+    "evolvesFrom": "Corrook",
+    "evolvesTo": [
+      "Yokaerion",
+      "Noctenguard"
+    ],
+    "evoMethods": [
+      {
+        "into": "Yokaerion",
+        "method": "Level 48 at Night"
+      },
+      {
+        "into": "Noctenguard",
+        "method": "Level 48 during Day"
+      }
+    ]
   },
   {
     "id": 7,
@@ -165,7 +216,10 @@
       "bst": 590
     },
     "dexEntry": "Yokaerion rules over the darkest forests like a silent warlord. It waits motionless in the treetops before descending upon intruders with psychic-enhanced talons.",
-    "sprite": "/sprites/yokaerion.png"
+    "sprite": "/sprites/yokaerion.png",
+    "evolvesFrom": "Tengloom",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 8,
@@ -189,7 +243,10 @@
       "bst": 590
     },
     "dexEntry": "Legends say Noctenguard judges the souls of those who wander sacred forests. Those deemed impure are struck down by invisible psychic blades.",
-    "sprite": "/sprites/noctenguard.png"
+    "sprite": "/sprites/noctenguard.png",
+    "evolvesFrom": "Tengloom",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 9,
@@ -213,7 +270,17 @@
       "bst": 338
     },
     "dexEntry": "Forged centuries ago from polished steel and ancient winds, AEROCHIME is an animate sentinel that floats by manipulating wind currents. While physically fragile (DEF: 55, Sp. DEF: 40), it moves with astonishing speed (SPD: 90) and uses its sharp metal body to defend sacred locations. Its melodic chiming can often be heard on peaceful nights.",
-    "sprite": "/sprites/aerochime.png"
+    "sprite": "/sprites/aerochime.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Aerolyre"
+    ],
+    "evoMethods": [
+      {
+        "into": "Aerolyre",
+        "method": "Level 30 while knowing Relic Song"
+      }
+    ]
   },
   {
     "id": 10,
@@ -237,7 +304,17 @@
       "bst": 465
     },
     "dexEntry": "As AEROCHIME evolves, its body expands into a harp-like frame that captures and channels powerful wind currents. Ancient temples believed that the melodies produced by AEROLYRE could calm violent storms. When threatened, it releases razor-sharp gusts that slice through the air like blades.",
-    "sprite": "/sprites/aerolyre.png"
+    "sprite": "/sprites/aerolyre.png",
+    "evolvesFrom": "Aerochime",
+    "evolvesTo": [
+      "Tempestrael"
+    ],
+    "evoMethods": [
+      {
+        "into": "Tempestrael",
+        "method": "Level 55 during Rain"
+      }
+    ]
   },
   {
     "id": 11,
@@ -261,7 +338,10 @@
       "bst": 600
     },
     "dexEntry": "Ancient civilizations forged TEMPESTRAEL as a sacred guardian to control violent mountain winds. Its enormous metallic pipes channel hurricane-force air currents that produce thunderous melodies heard for miles. Legends say when its haunting music echoes across the sky, a great storm will soon follow.",
-    "sprite": "/sprites/tempestrael.png"
+    "sprite": "/sprites/tempestrael.png",
+    "evolvesFrom": "Aerolyre",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 12,
@@ -285,7 +365,17 @@
       "bst": 310
     },
     "dexEntry": "GLACUB lived in icy caverns during ancient ice ages. Its rocky hide begins forming at birth as mineral-rich ice freezes around its fur. Though small, it uses its sharp claws to dig through frozen soil to search for nutrient-rich moss that grows beneath the ice.",
-    "sprite": "/sprites/glacub.png"
+    "sprite": "/sprites/glacub.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Glacioth"
+    ],
+    "evoMethods": [
+      {
+        "into": "Glacioth",
+        "method": "Level 30"
+      }
+    ]
   },
   {
     "id": 13,
@@ -309,7 +399,17 @@
       "bst": 455
     },
     "dexEntry": "A massive, ancient creature that inhabited glaciated caverns during ancient ice ages. Its slow, deliberate movements conserve energy in extreme cold. Its massive, rocky carapace (DEF 100) is infused with permanent glacial ice (SP. DEF 130), offering unparalleled protection. It uses its large, ice-capped claws to smash through frozen ground and ice to forage for nutrient-rich moss that grows only in sub-zero environments.",
-    "sprite": "/sprites/glacioth.png"
+    "sprite": "/sprites/glacioth.png",
+    "evolvesFrom": "Glacub",
+    "evolvesTo": [
+      "Permafang"
+    ],
+    "evoMethods": [
+      {
+        "into": "Permafang",
+        "method": "Level 55"
+      }
+    ]
   },
   {
     "id": 14,
@@ -333,7 +433,10 @@
       "bst": 590
     },
     "dexEntry": "PERMAFANG is believed to be the final form of a species that dominated ancient glacial caverns during prehistoric ice ages. Layers of rock and ice formed over centuries have fused into an impenetrable carapace. Entire cave systems have been discovered carved out by its massive claws as it searches for the rare moss that sustains it.",
-    "sprite": "/sprites/permafang.png"
+    "sprite": "/sprites/permafang.png",
+    "evolvesFrom": "Glacioth",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 15,
@@ -357,7 +460,17 @@
       "bst": 375
     },
     "dexEntry": "A fast and agile jungle dweller. TOXIMONK relies on its incredible Speed to evade attacks while delivering stinging, venomous strikes with the sharp bone spurs on its limbs. While physically fragile (DEF 30), it can quickly poison opponents (ATK 40) before disappearing back into the treetops of Route 119. It often makes a low, chattering sound to communicate.",
-    "sprite": "/sprites/toximonk.png"
+    "sprite": "/sprites/toximonk.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Venomaki"
+    ],
+    "evoMethods": [
+      {
+        "into": "Venomaki",
+        "method": "Level 28"
+      }
+    ]
   },
   {
     "id": 16,
@@ -381,7 +494,17 @@
       "bst": 500
     },
     "dexEntry": "VENOMAKI patrols dense jungle canopies where it silently stalks prey. Its elongated bone spurs drip with potent venom that can paralyze even large predators. It uses lightning-fast strikes before vanishing into the foliage.",
-    "sprite": "/sprites/venomaki.png"
+    "sprite": "/sprites/venomaki.png",
+    "evolvesFrom": "Toximonk",
+    "evolvesTo": [
+      "Venomandrill"
+    ],
+    "evoMethods": [
+      {
+        "into": "Venomandrill",
+        "method": "Level 45"
+      }
+    ]
   },
   {
     "id": 17,
@@ -405,7 +528,10 @@
       "bst": 580
     },
     "dexEntry": "VENOMANDRILL rules the upper canopy of dense jungle regions. Its bone spurs have grown into deadly venom-coated blades capable of piercing thick bark and bone alike. It strikes from above with blinding speed, poisoning its prey before they even realize they are under attack.",
-    "sprite": "/sprites/venomandrill.png"
+    "sprite": "/sprites/venomandrill.png",
+    "evolvesFrom": "Venomaki",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 18,
@@ -429,7 +555,17 @@
       "bst": 300
     },
     "dexEntry": "A tiny arthropod that thrives in the damp soil of Eterna Forest. Mycotick absorbs toxic compounds from underground fungi through its porous shell. When threatened, it releases faint glowing spores that irritate predators and obscure its escape.",
-    "sprite": "/sprites/mycotick.png"
+    "sprite": "/sprites/mycotick.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Mycovenox"
+    ],
+    "evoMethods": [
+      {
+        "into": "Mycovenox",
+        "method": "Level 30"
+      }
+    ]
   },
   {
     "id": 19,
@@ -453,7 +589,17 @@
       "bst": 555
     },
     "dexEntry": "Deep within the mist-filled heart of Eterna Forest, Mycovenox roams the forest floor releasing massive clouds of toxic spores. The glowing vents along its body continuously produce volatile miasma that can blanket entire sections of forest. Ancient texts claim that early explorers avoided areas where its faint green glow could be seen through the fog.",
-    "sprite": "/sprites/mycovenox.png"
+    "sprite": "/sprites/mycovenox.png",
+    "evolvesFrom": "Mycotick",
+    "evolvesTo": [
+      "Scolitox"
+    ],
+    "evoMethods": [
+      {
+        "into": "Scolitox",
+        "method": "Level 45 at Night"
+      }
+    ]
   },
   {
     "id": 20,
@@ -477,7 +623,10 @@
       "bst": 435
     },
     "dexEntry": "Discovered deep within the ancient, misty groves of Sinnoh's Eterna Forest, Scolitox is known for the highly volatile toxic mist it constantly emits. It moves quickly on four segmented legs (Speed 80) but its physically weak body (DEF 30) forces it to avoid direct confrontation. It uses complex, glowing feelers and vents on its back (Sp. ATK 100) to spray large clouds of lethal miasma to defend itself and deter predators. It is believed to have mutated from ancient, now-extinct arthropods that inhabited the Sinnoh Underground, surviving on highly reactive fungi. This nocturnal Pokémon thrives in damp, dark environments where its bioluminescent markings offer a faint, deceptive glow to lure prey.",
-    "sprite": "/sprites/scolitox.png"
+    "sprite": "/sprites/scolitox.png",
+    "evolvesFrom": "Mycovenox",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 21,
@@ -501,7 +650,17 @@
       "bst": 305
     },
     "dexEntry": "A wandering spirit bound to a fragment of an ancient ceremonial mask. It drifts silently through the woods near Sinnoh’s Old Chateau, quietly observing travelers. When stared at directly, it quickly fades into mist.",
-    "sprite": "/sprites/masklet.png"
+    "sprite": "/sprites/masklet.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Gloamveil"
+    ],
+    "evoMethods": [
+      {
+        "into": "Gloamveil",
+        "method": "Level 25"
+      }
+    ]
   },
   {
     "id": 22,
@@ -525,7 +684,17 @@
       "bst": 415
     },
     "dexEntry": "Gloamveil drifts silently through the fog of Eterna Forest at dusk.\r\nThe mask it wears grows larger as it absorbs lingering emotions from travelers who pass through the woods at night.",
-    "sprite": "/sprites/gloamveil.png"
+    "sprite": "/sprites/gloamveil.png",
+    "evolvesFrom": "Masklet",
+    "evolvesTo": [
+      "Nocturgeist"
+    ],
+    "evoMethods": [
+      {
+        "into": "Nocturgeist",
+        "method": "Level 45 at Night"
+      }
+    ]
   },
   {
     "id": 23,
@@ -549,7 +718,10 @@
       "bst": 509
     },
     "dexEntry": "Legends from Sinnoh speak of a masked specter that waits silently within the fog surrounding the Old Chateau. Those who meet its burning gaze often lose their memory of the encounter entirely. It feeds on the confusion and fractured thoughts of travelers who wander too deep into the woods.",
-    "sprite": "/sprites/nocturgeist.png"
+    "sprite": "/sprites/nocturgeist.png",
+    "evolvesFrom": "Gloamveil",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 24,
@@ -573,7 +745,10 @@
       "bst": 390
     },
     "dexEntry": "This Pokémon is an antique weather vane from an abandoned Unovan factory that was possessed by the spirits of restless workers. At night it drifts through ruined industrial zones, silently rotating as if guided by invisible winds.",
-    "sprite": "/sprites/spectrovane.png"
+    "sprite": "/sprites/spectrovane.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 25,
@@ -597,7 +772,10 @@
       "bst": 546
     },
     "dexEntry": "Born where ancient waste mounds hardened, Terratoxin drags itself from poinsoned earth. It exudes deadly gases that melt rock and sicken the unprepared.",
-    "sprite": "/sprites/terratoxin.png"
+    "sprite": "/sprites/terratoxin.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 26,
@@ -621,7 +799,10 @@
       "bst": 369
     },
     "dexEntry": "Astrolinth's stone shell resembles ancient star maps. It reads the alignment of the cosmos to predict the movements of time to come.",
-    "sprite": "/sprites/astrolinth.png"
+    "sprite": "/sprites/astrolinth.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 27,
@@ -645,7 +826,10 @@
       "bst": 340
     },
     "dexEntry": "\"Will-O\" The Lantern Pokemon. In graveyards, Willoling drift about in small groups, acting as gentle guides for lost and weary souls.",
-    "sprite": "/sprites/willoling.png"
+    "sprite": "/sprites/willoling.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 28,
@@ -669,7 +853,10 @@
       "bst": 442
     },
     "dexEntry": "Toxicreep rapidly skitters over terrain on jogged rocks. The toxic sludge it secretes pollutes the environment as it dashes about.",
-    "sprite": "/sprites/toxicreep.png"
+    "sprite": "/sprites/toxicreep.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 29,
@@ -693,7 +880,10 @@
       "bst": 308
     },
     "dexEntry": "Living Fossil Pokemon. Trilithor isn't very quick, but it is tough. Sheltered beneath ancient shells, it slumbers deep underwater for centuries.",
-    "sprite": "/sprites/trilithor.png"
+    "sprite": "/sprites/trilithor.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 30,
@@ -717,7 +907,10 @@
       "bst": 535
     },
     "dexEntry": "Oozyte lurks in murky water, it's toxic body generating bioelectric shocks. It's touch is dangerously numbing and its membrane absorbs electricity.",
-    "sprite": "/sprites/oozyte.png"
+    "sprite": "/sprites/oozyte.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 31,
@@ -741,7 +934,10 @@
       "bst": 411
     },
     "dexEntry": "Drakgeist is a ghostly dragon spirit that possesses empty bones. It haunts old battlegrounds, yearning for battles long past.",
-    "sprite": "/sprites/drakgeist.png"
+    "sprite": "/sprites/drakgeist.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 32,
@@ -765,7 +961,10 @@
       "bst": 452
     },
     "dexEntry": "Grave Frost Pokemon. Frostingrave, a vengeful spirit animating an icy carcass, lumbers about frozen gravesites while seeking its lost revenge.",
-    "sprite": "/sprites/frostingrave.png"
+    "sprite": "/sprites/frostingrave.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 33,
@@ -789,7 +988,10 @@
       "bst": 526
     },
     "dexEntry": "Badgestone lines its tunnels with hardened earth that it compresses using vibrations from its body. The crystal-like stones growing from its back are pieces of ancient bedrock that have bonded to it over centuries.",
-    "sprite": "/sprites/badgerstone.png"
+    "sprite": "/sprites/badgerstone.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 34,
@@ -813,7 +1015,10 @@
       "bst": 600
     },
     "dexEntry": "An enigmatic creature said to emerge from cosmic voids. Its stripes are believed to be portals to other dimensions. When threatened, it generates psychic barriers and instills an unsettling calm, drawing foes into a trance before unleashing a barrage of dark energy. Its movements are slow and deliberate, belying its true potential.",
-    "sprite": "/sprites/okultus.png"
+    "sprite": "/sprites/okultus.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 35,
@@ -837,7 +1042,10 @@
       "bst": 600
     },
     "dexEntry": "Born from the spirits of ancient guardians and discarded metal, this elusive Pokémon phases through solid objects. Its metallic sheen deflects most attacks, and its incredible speed leaves only a trail of spectral energy. Fiercely territorial, it playfully retrieves lost items before vanishing into the shadows.",
-    "sprite": "/sprites/spectrostripe.png"
+    "sprite": "/sprites/spectrostripe.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 36,
@@ -861,7 +1069,10 @@
       "bst": 680
     },
     "dexEntry": "A creature of the twilight hours that thrives in dimly lit plains. Its powerful legs outrun almost any threat, though it prefers to avoid confrontation. Its plumage is deceptive camouflage, blending seamlessly into shadows. Though surprisingly timid, when cornered it unleashes devastatingly powerful dark and normal-type attacks.",
-    "sprite": "/sprites/noctrich.png"
+    "sprite": "/sprites/noctrich.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 37,
@@ -885,7 +1096,10 @@
       "bst": 600
     },
     "dexEntry": "A living powerhouse that generates immense electrical charges through the flora growing on its hide. Its massive frame clears paths through dense forests, while suction cups on its feet grip any terrain. Its trunk detects minute electromagnetic changes and channels powerful electric attacks. A gentle giant, it nurtures smaller Pokémon but unleashes devastating thunderbolts when angered.",
-    "sprite": "/sprites/thundermoo.png"
+    "sprite": "/sprites/thundermoo.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 38,
@@ -909,7 +1123,10 @@
       "bst": 600
     },
     "dexEntry": "As unyielding as mountains and as relentless as ocean currents, its body of jagged water-worn rocks withstands extreme pressures. It ambushes prey from coastal caves and rocky riverbeds with surprising speed. Its insatiable appetite drives constant, aggressive hunting. When threatened, it rapidly switches between a defensive stance and an offensive frenzy of powerful water-infused claws.",
-    "sprite": "/sprites/aquagrit.png"
+    "sprite": "/sprites/aquagrit.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 39,
@@ -933,7 +1150,10 @@
       "bst": 640
     },
     "dexEntry": "This immense Pokémon drifts through clear waters, its back forming a living ecosystem of vibrant flora. It has a seemingly endless appetite, constantly grazing on aquatic plants, yet maintains a benevolent demeanor. However, when threatened or witnessing injustice, it shows no mercy — unleashing powerful attacks with its vast bulk and the force of nature.",
-    "sprite": "/sprites/flora-levi.png"
+    "sprite": "/sprites/flora-levi.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 40,
@@ -957,7 +1177,10 @@
       "bst": 650
     },
     "dexEntry": "A master architect of icy waterways, using its powerful tail to shape solid ice and redirect currents. It builds elaborate underwater structures from ice and stone as homes and hunting grounds. It emits a chilling scent that repels weaker Pokémon. Despite its formidable nature, it is incredibly agile in water, gliding through icy depths protected by a veil of pure water.",
-    "sprite": "/sprites/castorcea.png"
+    "sprite": "/sprites/castorcea.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 41,
@@ -981,7 +1204,10 @@
       "bst": 550
     },
     "dexEntry": "An elegant yet formidable Pokémon found near pristine water sources in arid regions. Its shimmering steel plates make it highly resilient, while its graceful movements navigate treacherous terrain with ease. Its powerful mace-like tail delivers devastating water-infused blows with surprising agility. Its serene gaze can reverse an opponent's strength against them.",
-    "sprite": "/sprites/aquamace.png"
+    "sprite": "/sprites/aquamace.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 42,
@@ -1005,7 +1231,10 @@
       "bst": 570
     },
     "dexEntry": "Despite its small stature, this fierce Pokémon possesses the raw power of ancient dragons and the resilience of solid rock. Its fur is tough and interspersed with sharp crystalline growths, and its segmented crystal tail can shatter boulders. Incredibly skittish, it flees at the first sign of danger — but when cornered, it transforms into an unyielding fighter. It carves intricate tunnels with its unique tail.",
-    "sprite": "/sprites/chintillix.png"
+    "sprite": "/sprites/chintillix.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 43,
@@ -1029,7 +1258,10 @@
       "bst": 650
     },
     "dexEntry": "Despite its delicate appearance, its metallic structure withstands intense heat and physical impacts, nesting in volcanic vents and active forges. Its body temperature is extremely high and its metal feathers radiate a fiery glow. Its large compound eyes detect minute changes in air currents and heat signatures. Its melodic calls can fully unleash a raw, punk-rock energy that disorients foes and empowers allies.",
-    "sprite": "/sprites/ignacrus.png"
+    "sprite": "/sprites/ignacrus.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 44,
@@ -1053,7 +1285,10 @@
       "bst": 600
     },
     "dexEntry": "This charming Pokémon resides in flower-filled meadows, its body covered in resilient silvery-pink steel adorned with fairy markings. Its long flexible metal snout emits a sweet aroma that lulls Bug-type Pokémon into a trance. Naturally benevolent, it spreads a soothing aura that prevents sleep. When it extends its snout, it can swiftly absorb energy or deliver powerful metallic strikes. In its presence, the weather grows calm and tranquil.",
-    "sprite": "/sprites/nectarmetal.png"
+    "sprite": "/sprites/nectarmetal.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 45,
@@ -1077,7 +1312,10 @@
       "bst": 520
     },
     "dexEntry": "This unusual Pokémon dwells in rocky coastal areas and deep ocean trenches, perfectly camouflaged among geological formations. Its geode-like core offers exceptional defense against crushing pressures. It rearranges its rocky arm segments to mimic surrounding stones or coral, remaining motionless for days. When threatened, it releases clouds of mineral-infused spores from hidden pores, causing various status conditions.",
-    "sprite": "/sprites/asterisk.png"
+    "sprite": "/sprites/asterisk.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 46,
@@ -1101,7 +1339,10 @@
       "bst": 550
     },
     "dexEntry": "This resilient creature thrives in harsh, sun-drenched deserts, blending perfectly with rocky outcrops. Its body is covered in crystalline thorns as hard as granite that are capable of photosynthesis, allowing it to survive without traditional sustenance. It possesses an unexpectedly calm demeanor, often basking peacefully. In battle its serene movements can trigger secondary effects — but when truly provoked, it concentrates raw power into devastatingly potent attacks.",
-    "sprite": "/sprites/cactalith.png"
+    "sprite": "/sprites/cactalith.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 47,
@@ -1125,7 +1366,10 @@
       "bst": 525
     },
     "dexEntry": "This peculiar Pokémon inhabits the deepest parts of coral reefs, often drifting near ancient shipwrecks. Though appearing to be a vibrant clownfish, its body is a spectral illusion with fins formed from ghostly anemone tentacles. It heals itself in humid conditions, and its presence causes lush grasses to sprout rapidly, even underwater. Fiercely protective of its territory, it slowly drains the energy of those who disturb it.",
-    "sprite": "/sprites/anemonix.png"
+    "sprite": "/sprites/anemonix.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 48,
@@ -1149,7 +1393,10 @@
       "bst": 600
     },
     "dexEntry": "This formidable creature rules desolate icy peaks and frozen forests, active only under moonlight. Its piercing gaze strikes fear into any who trespass. Its comb and wattle, formed from cursed ice, emanate a chilling aura that disables opponents' moves. The spectral mist from its tail feathers can freeze water instantly. Incredibly proud and territorial — any attempt to intimidate it only strengthens its resolve and fuels its attacks.",
-    "sprite": "/sprites/noctroost.png"
+    "sprite": "/sprites/noctroost.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 49,
@@ -1173,7 +1420,10 @@
       "bst": 460
     },
     "dexEntry": "This mischievous creature lurks in volcanic caves and smoldering ruins, disguised as discarded glowing rubble. Its fire-infused carapace protects against extreme heat and aids its camouflage. Notoriously stealthy, it swiftly snatches items from unsuspecting travelers. Despite its bold thievery, it is surprisingly timid when cornered — instantly vanishing in a puff of smoke and embers if its health runs low.",
-    "sprite": "/sprites/embercap.png"
+    "sprite": "/sprites/embercap.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 50,
@@ -1197,7 +1447,10 @@
       "bst": 600
     },
     "dexEntry": "This terrifying Pokémon lurks in war-torn landscapes and abandoned factories, feeding on lingering fear and decaying metals. Its gaunt metallic body moves with unsettling silence and speed. Its razor-sharp claws are extensions of its spectral essence, effortlessly tearing through physical and ethereal barriers alike. It leaves behind a faint, lingering scent of ozone and dread — a warning that a powerful spectral predator is near.",
-    "sprite": "/sprites/ghoulverine.png"
+    "sprite": "/sprites/ghoulverine.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 51,
@@ -1221,7 +1474,10 @@
       "bst": 600
     },
     "dexEntry": "This reclusive Pokémon dwells in the coldest mountain lakes and frozen caverns. Its enormous shaggy form withstands extreme cold and pressure, and it manipulates its watery environment using ice-encrusted fur to generate powerful currents. Once an opponent enters its domain, escape becomes nearly impossible. Its very presence weakens the defensive capabilities of all nearby Pokémon, making it a truly formidable force to reckon with.",
-    "sprite": "/sprites/aquagoliah.png"
+    "sprite": "/sprites/aquagoliah.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 52,
@@ -1245,7 +1501,10 @@
       "bst": 600
     },
     "dexEntry": "A creature of legend said to appear on moonlit nights in ancient, overgrown forests. Its form blends spectral energy and raw physical power, moving with incredible speed and silence. Its spectral claws effortlessly slice through physical and spiritual targets alike. It possesses an almost supernatural resilience, seemingly untouched by conventional attacks. Fiercely loyal to its chosen pack, its ghostly howls send shivers down the spine of even the bravest warriors.",
-    "sprite": "/sprites/lycanveil.png"
+    "sprite": "/sprites/lycanveil.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 53,
@@ -1269,7 +1528,10 @@
       "bst": 600
     },
     "dexEntry": "This ancient Pokémon dwells deep within volcanic caverns. Its body is composed of durable, heat-resistant steel housing a core of intense, volatile fire. It typically remains in a calm, meditative state, its inactive heads cooling to dark metal. When provoked, its dormant heads ignite with fury, unleashing a barrage of molten attacks. It can adapt its metallic sheen and fiery coloration to blend seamlessly into its superheated surroundings.",
-    "sprite": "/sprites/pyrodra.png"
+    "sprite": "/sprites/pyrodra.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 54,
@@ -1293,7 +1555,10 @@
       "bst": 600
     },
     "dexEntry": "This enigmatic Pokémon dwells in ancient moonlit grottos near deep pools of water. Despite its fairy-like appearance, it possesses immense psychic and dark powers. Its beautiful voice can transform into a piercing sonic wave, affecting foes with an ethereal chill. Driven by an insatiable hunger for psychic energy and dark essences, it glides effortlessly through air and water alike. Its alluring presence leaves a lingering sense of unease in its wake.",
-    "sprite": "/sprites/nocturna.png"
+    "sprite": "/sprites/nocturna.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 55,
@@ -1317,11 +1582,82 @@
       "bst": 600
     },
     "dexEntry": "A ruler of the deepest, coldest oceans and frozen lakes, its body covered in razor-sharp ice scales that constantly shed icy water. Each of its heads possesses a distinct ice mask capable of unleashing blasts of frozen water or icy winds. A mysterious shadowy aura reduces damage it takes at full health. Its roars and calls echo through frigid waters with deafening intensity, capable of shaking the very foundations of icebergs.",
-    "sprite": "/sprites/cryodra.png"
+    "sprite": "/sprites/cryodra.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
     "id": 56,
     "dexNum": "056",
+    "name": "Bulbasaur",
+    "species": "Seed Pokemon",
+    "type1": "Grass",
+    "type2": "Poison",
+    "ability1": "Overgrow",
+    "ability2": null,
+    "abilityHidden": "Chlorophyll",
+    "height": "2'04\"",
+    "weight": "15.2 lb",
+    "stats": {
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spAtk": 65,
+      "spDef": 65,
+      "spd": 45,
+      "bst": 318
+    },
+    "dexEntry": "In this region, Bulbasaur prefer dense, humid forests where sunlight filters softly through thick canopies. The seed on its back absorbs ambient energy, allowing it to remain calm even in tense environments.",
+    "sprite": "/sprites/bulbasaur.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Ivysaur"
+    ],
+    "evoMethods": [
+      {
+        "into": "Ivysaur",
+        "method": "Level 16"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "dexNum": "057",
+    "name": "Ivysaur",
+    "species": "Seed Pokemon",
+    "type1": "Grass",
+    "type2": "Poison",
+    "ability1": "Overgrow",
+    "ability2": null,
+    "abilityHidden": "Chlorophyll",
+    "height": "3'03\"",
+    "weight": "28.7 lb",
+    "stats": {
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spAtk": 80,
+      "spDef": 80,
+      "spd": 60,
+      "bst": 405
+    },
+    "dexEntry": "As it grows, Ivysaur become more territorial, often claiming patches of forest as their own. The bud on its back reacts to nearby energy, pulsing faintly when unfamiliar Pokémon approach.",
+    "sprite": "/sprites/ivysaur.png",
+    "evolvesFrom": "Bulbasaur",
+    "evolvesTo": [
+      "Venusaur (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Venusaur (variant)",
+        "method": "Level 32 during Snow"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "dexNum": "058",
     "name": "Venusaur (variant)",
     "species": "Frost Bloom Pokemon",
     "type1": "Ice",
@@ -1341,11 +1677,82 @@
       "bst": 520
     },
     "dexEntry": "This regional variant developed in frozen northern tundras where sunlight is scarce. Its flower has crystallized into a magnificent ice lotus that draws energy from the aurora. The glacial petals can fire shards of ice cold enough to freeze a river solid in seconds.",
-    "sprite": "/sprites/venusaur-variant.png"
+    "sprite": "/sprites/venusaur-variant.png",
+    "evolvesFrom": "Ivysaur",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 57,
-    "dexNum": "057",
+    "id": 59,
+    "dexNum": "059",
+    "name": "Charmander",
+    "species": "Lizard Pokemon",
+    "type1": "Fire",
+    "type2": null,
+    "ability1": "Blaze",
+    "ability2": null,
+    "abilityHidden": "Solar Power",
+    "height": "2'00\"",
+    "weight": "18.7 lb",
+    "stats": {
+      "hp": 39,
+      "atk": 53,
+      "def": 43,
+      "spAtk": 60,
+      "spDef": 50,
+      "spd": 65,
+      "bst": 310
+    },
+    "dexEntry": "Charmander raised in this region develop a steadier flame, even in strong winds. They are often seen training their endurance along rocky terrain and open plains.",
+    "sprite": "/sprites/charmander.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Charmeleon"
+    ],
+    "evoMethods": [
+      {
+        "into": "Charmeleon",
+        "method": "Level 16"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "dexNum": "060",
+    "name": "Charmeleon",
+    "species": "Flame Pokemon",
+    "type1": "Fire",
+    "type2": null,
+    "ability1": "Blaze",
+    "ability2": null,
+    "abilityHidden": "Solar Power",
+    "height": "3'07\"",
+    "weight": "41.9 lb",
+    "stats": {
+      "hp": 58,
+      "atk": 64,
+      "def": 58,
+      "spAtk": 80,
+      "spDef": 65,
+      "spd": 80,
+      "bst": 405
+    },
+    "dexEntry": "Known for their intense tempers, Charmeleon in this region frequently battle to prove dominance. Their flames burn hotter during conflicts, sometimes scorching the surrounding land.",
+    "sprite": "/sprites/charmeleon.png",
+    "evolvesFrom": "Charmander",
+    "evolvesTo": [
+      "Charizard (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Charizard (variant)",
+        "method": "Leel 36 during Rain"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "dexNum": "061",
     "name": "Charizard (variant)",
     "species": "Tempest Drake Pokemon",
     "type1": "Flying",
@@ -1365,11 +1772,82 @@
       "bst": 560
     },
     "dexEntry": "This variant evolved along storm-battered coastlines where volcanic activity is absent. Rather than fire, it expels high-pressure jets of water powerful enough to pierce solid rock. It rides hurricane winds effortlessly and is said to appear only during the most violent ocean storms, unbothered by the chaos surrounding it.",
-    "sprite": "/sprites/charizard-variant.png"
+    "sprite": "/sprites/charizard-variant.png",
+    "evolvesFrom": "Charmeleon",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 58,
-    "dexNum": "058",
+    "id": 62,
+    "dexNum": "062",
+    "name": "Squirtle",
+    "species": "Tiny Turtle Pokemon",
+    "type1": "Water",
+    "type2": null,
+    "ability1": "Torrent",
+    "ability2": null,
+    "abilityHidden": "Rain Dish",
+    "height": "1'08\"",
+    "weight": "19.8 lb",
+    "stats": {
+      "hp": 44,
+      "atk": 48,
+      "def": 65,
+      "spAtk": 50,
+      "spDef": 64,
+      "spd": 43,
+      "bst": 314
+    },
+    "dexEntry": "Squirtle here are commonly found near freshwater springs. Their shells develop a slightly rougher texture, helping them grip slippery stone surfaces.",
+    "sprite": "/sprites/squirtle.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Wartortle"
+    ],
+    "evoMethods": [
+      {
+        "into": "Wartortle",
+        "method": "Level 16"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "dexNum": "063",
+    "name": "Wartortle",
+    "species": "Turtle Pokemon",
+    "type1": "Water",
+    "type2": null,
+    "ability1": "Torrent",
+    "ability2": null,
+    "abilityHidden": "Rain Dish",
+    "height": "3'03\"",
+    "weight": "49.6 lb",
+    "stats": {
+      "hp": 59,
+      "atk": 63,
+      "def": 80,
+      "spAtk": 65,
+      "spDef": 80,
+      "spd": 58,
+      "bst": 405
+    },
+    "dexEntry": "Wartortle are seen as symbols of patience in this region. They spend long periods resting near water, observing their surroundings before making a move.",
+    "sprite": "/sprites/wartortle.png",
+    "evolvesFrom": "Squirtle",
+    "evolvesTo": [
+      "Blastoise (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Blastoise (variant)",
+        "method": "Level 36 in Industrial Area"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "dexNum": "064",
     "name": "Blastoise (variant)",
     "species": "Toxic Cannon Pokemon",
     "type1": "Steel",
@@ -1389,11 +1867,82 @@
       "bst": 568
     },
     "dexEntry": "This variant emerged in heavily polluted industrial zones, its shell having absorbed decades of heavy metals and toxic runoff until it hardened into reinforced steel plating. Its cannons no longer fire water — instead they launch streams of corrosive sludge capable of melting through concrete. The spikes covering its shell are laced with contact poison, making it dangerous to approach from any angle.",
-    "sprite": "/sprites/blastoise-variant.png"
+    "sprite": "/sprites/blastoise-variant.png",
+    "evolvesFrom": "Wartortle",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 59,
-    "dexNum": "059",
+    "id": 65,
+    "dexNum": "065",
+    "name": "Caterpie",
+    "species": "Worm Pokemon",
+    "type1": "Bug",
+    "type2": null,
+    "ability1": "Shield Dust",
+    "ability2": null,
+    "abilityHidden": "Run Away",
+    "height": "1'00\"",
+    "weight": "6.4 lb",
+    "stats": {
+      "hp": 45,
+      "atk": 30,
+      "def": 35,
+      "spAtk": 20,
+      "spDef": 20,
+      "spd": 45,
+      "bst": 195
+    },
+    "dexEntry": "Caterpie thrive in the lush undergrowth of this region. Their antennae are highly sensitive, allowing them to detect even the faintest disturbances nearby.",
+    "sprite": "/sprites/caterpie.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Metapod"
+    ],
+    "evoMethods": [
+      {
+        "into": "Metapod",
+        "method": "Level 7"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "dexNum": "066",
+    "name": "Metapod",
+    "species": "Cocoon Pokemon",
+    "type1": "Bug",
+    "type2": null,
+    "ability1": "Shed Skin",
+    "ability2": null,
+    "abilityHidden": null,
+    "height": "2'04\"",
+    "weight": "21.8 lb",
+    "stats": {
+      "hp": 50,
+      "atk": 20,
+      "def": 55,
+      "spAtk": 25,
+      "spDef": 25,
+      "spd": 30,
+      "bst": 205
+    },
+    "dexEntry": "Metapod cling to tree trunks in quiet areas, remaining completely still for days. They are rarely seen, as they choose locations where predators seldom roam.",
+    "sprite": "/sprites/metapod.png",
+    "evolvesFrom": "Caterpie",
+    "evolvesTo": [
+      "Butterfree (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Butterfree (variant)",
+        "method": "Level 10"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "dexNum": "067",
     "name": "Butterfree (variant)",
     "species": "Canopy Butterfly Pokemon",
     "type1": "Bug",
@@ -1413,11 +1962,82 @@
       "bst": 430
     },
     "dexEntry": "This variant evolved deep within ancient forest canopies where it rarely needs to leave the treetops. Its wings developed a stained-glass pattern that perfectly mimics sunlight filtering through leaves, making it nearly invisible at rest. Unlike its relative, it produces no sleep-inducing powder — instead it relies entirely on camouflage and stillness to avoid predators.",
-    "sprite": "/sprites/butterfree-variant.png"
+    "sprite": "/sprites/butterfree-variant.png",
+    "evolvesFrom": "Metapod",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 60,
-    "dexNum": "060",
+    "id": 68,
+    "dexNum": "068",
+    "name": "Weedle",
+    "species": "Hairy Bug Pokemon",
+    "type1": "Bug",
+    "type2": "Poison",
+    "ability1": "Shield Dust",
+    "ability2": null,
+    "abilityHidden": "Run Away",
+    "height": "1'00\"",
+    "weight": "7.1 lb",
+    "stats": {
+      "hp": 40,
+      "atk": 35,
+      "def": 30,
+      "spAtk": 20,
+      "spDef": 20,
+      "spd": 50,
+      "bst": 195
+    },
+    "dexEntry": "Weedle gather in clusters along forest edges. Their stingers contain a slightly more potent toxin, used primarily as a deterrent rather than for hunting.",
+    "sprite": "/sprites/weedle.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Kakuna"
+    ],
+    "evoMethods": [
+      {
+        "into": "Kakuna",
+        "method": "Level 7"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "dexNum": "069",
+    "name": "Kakuna",
+    "species": "Cocoon Pokemon",
+    "type1": "Bug",
+    "type2": "Poison",
+    "ability1": "Shed Skin",
+    "ability2": null,
+    "abilityHidden": null,
+    "height": "2'00\"",
+    "weight": "22.0 lb",
+    "stats": {
+      "hp": 45,
+      "atk": 25,
+      "def": 50,
+      "spAtk": 25,
+      "spDef": 25,
+      "spd": 35,
+      "bst": 205
+    },
+    "dexEntry": "Kakuna attach themselves to branches in shaded areas. Despite their stillness, they can sense vibrations from great distances and react instantly to threats.",
+    "sprite": "/sprites/kakuna.png",
+    "evolvesFrom": "Weedle",
+    "evolvesTo": [
+      "Beedrill (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Beedrill (variant)",
+        "method": "Level 10"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "dexNum": "070",
     "name": "Beedrill (variant)",
     "species": "Pollinator Pokemon",
     "type1": "Grass",
@@ -1437,11 +2057,82 @@
       "bst": 425
     },
     "dexEntry": "This variant evolved in flower-rich enchanted forests where aggression offered no survival advantage. Its stingers transformed into pollen-gathering appendages, and it now spends its days drifting between blooms, nurturing the flora around it. Its presence alone causes nearby plants to flourish, and it is considered a symbol of good fortune by those who tend gardens.",
-    "sprite": "/sprites/beedrill-variant.png"
+    "sprite": "/sprites/beedrill-variant.png",
+    "evolvesFrom": "Kakuna",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 61,
-    "dexNum": "061",
+    "id": 71,
+    "dexNum": "071",
+    "name": "Pidgey",
+    "species": "Tiny Bird Pokemon",
+    "type1": "Normal",
+    "type2": "Flying",
+    "ability1": "Keen Eye",
+    "ability2": "Tangled Feet",
+    "abilityHidden": "Big Pecks",
+    "height": "1'00\"",
+    "weight": "4.0 lb",
+    "stats": {
+      "hp": 40,
+      "atk": 45,
+      "def": 40,
+      "spAtk": 35,
+      "spDef": 35,
+      "spd": 56,
+      "bst": 251
+    },
+    "dexEntry": "Pidgey are abundant across the region, adapting easily to both urban and rural environments. They are often the first Pokémon new trainers encounter.",
+    "sprite": "/sprites/pidgey.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Pidgeotto"
+    ],
+    "evoMethods": [
+      {
+        "into": "Pidgeotto",
+        "method": "Level 18"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "dexNum": "072",
+    "name": "Pidgeotto",
+    "species": "Bird Pokemon",
+    "type1": "Normal",
+    "type2": "Flying",
+    "ability1": "Keen Eye",
+    "ability2": "Tangled Feet",
+    "abilityHidden": "Big Pecks",
+    "height": "3'07\"",
+    "weight": "66.1 lb",
+    "stats": {
+      "hp": 63,
+      "atk": 60,
+      "def": 55,
+      "spAtk": 50,
+      "spDef": 50,
+      "spd": 71,
+      "bst": 349
+    },
+    "dexEntry": "Pidgeotto patrol wide territories, circling high above. They are known to guide lost travelers by subtly steering them away from dangerous areas.",
+    "sprite": "/sprites/pidgeotto.png",
+    "evolvesFrom": "Pidgey",
+    "evolvesTo": [
+      "Pigeot (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Pigeot (variant)",
+        "method": "Level 36 in Desselet Canyon"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "dexNum": "073",
     "name": "Pigeot (variant)",
     "species": "Talon Brawler Pokemon",
     "type1": "Fighting",
@@ -1460,12 +2151,49 @@
       "spd": 103,
       "bst": 541
     },
-    "dexEntry": "This variant evolved in deep canyon gorges where aerial hunting became impossible. Its wings gradually transformed into powerful muscular arms over generations, and its legs developed enough strength to crack solid rock with a single stomp. It fights exclusively on the ground using a combination of devastating kicks, talon strikes, and grappling techniques that even larger Pokémon struggle to withstand.",
-    "sprite": "/sprites/pigeot-variant.png"
+    "dexEntry": "This variant evolved in the deep canyon gorges of Desselet Canyon, where aerial hunting became impossible. Over generations, its wings transformed into powerful arms, while its legs gained the strength to crack solid rock with a single stomp. It fights exclusively on the ground, using devastating kicks and grappling techniques that overwhelm even larger Pokémon.",
+    "sprite": "/sprites/pigeot-variant.png",
+    "evolvesFrom": "Pidgeotto",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 62,
-    "dexNum": "062",
+    "id": 74,
+    "dexNum": "074",
+    "name": "Rattata",
+    "species": "Mouse Pokemon",
+    "type1": "Dark",
+    "type2": "Normal",
+    "ability1": "Gluttony",
+    "ability2": "Hustle",
+    "abilityHidden": "Thick Fat",
+    "height": "1'00\"",
+    "weight": "8.4 lb",
+    "stats": {
+      "hp": 30,
+      "atk": 56,
+      "def": 35,
+      "spAtk": 25,
+      "spDef": 35,
+      "spd": 72,
+      "bst": 253
+    },
+    "dexEntry": "In this region, Rattata are most active at night, scavenging through settlements and forest edges alike. They have adapted to thrive in darkness, using their keen senses and relentless hunger to survive where others cannot.",
+    "sprite": "/sprites/rattata.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Radicate (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Radicate (variant)",
+        "method": "Level 20 at Night in the Power Plant"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "dexNum": "075",
     "name": "Radicate (variant)",
     "species": "Surge Rat Pokemon",
     "type1": "Fire",
@@ -1485,11 +2213,48 @@
       "bst": 505
     },
     "dexEntry": "This variant evolved in abandoned cities where decaying electrical infrastructure created a constant storm of fire and lightning. It feeds by gnawing through live cables and absorbing the discharged energy directly. Its coiling tail generates a continuous loop of supercharged flame and electricity, and its bite carries enough combined voltage and heat to melt through steel plating. Entire city blocks have been left without power after a colony passes through.",
-    "sprite": "/sprites/radicate-variant.png"
+    "sprite": "/sprites/radicate-variant.png",
+    "evolvesFrom": "Rattata",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 63,
-    "dexNum": "063",
+    "id": 76,
+    "dexNum": "076",
+    "name": "Spearow",
+    "species": "Tiny Bird Pokemon",
+    "type1": "Normal",
+    "type2": "Flying",
+    "ability1": "Keen Eye",
+    "ability2": null,
+    "abilityHidden": "Sniper",
+    "height": "1'00\"",
+    "weight": "4.4 lb",
+    "stats": {
+      "hp": 40,
+      "atk": 60,
+      "def": 30,
+      "spAtk": 31,
+      "spDef": 31,
+      "spd": 70,
+      "bst": 262
+    },
+    "dexEntry": "Spearow in this region are especially aggressive, often forming small flocks that defend their territory fiercely against intruders.",
+    "sprite": "/sprites/spearow.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Fearow (variant)"
+    ],
+    "evoMethods": [
+      {
+        "into": "Fearow (variant)",
+        "method": "Level 20 in the Boreal Forest"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "dexNum": "077",
     "name": "Fearow (variant)",
     "species": "Boreal Spear Pokemon",
     "type1": "Grass",
@@ -1508,12 +2273,15 @@
       "spd": 95,
       "bst": 500
     },
-    "dexEntry": "This variant evolved in subarctic boreal forests, developing a crown of evergreen leaves that absorbs what little sunlight filters through the snow-laden canopy. Its long beak is permanently coated in a layer of ice, forming a frozen lance capable of piercing permafrost in a single strike. A patient and noble sentinel, it perches motionlessly for hours before descending with silent, precise precision on its quarry.",
-    "sprite": "/sprites/fearow-variant.png"
+    "dexEntry": "This variant evolved in the Boreal Forest, developing a crown of evergreen leaves that absorbs what little sunlight filters through the snow-laden canopy. Its long beak is permanently coated in a layer of ice, forming a frozen lance capable of piercing permafrost in a single strike. A patient and noble sentinel, it perches motionlessly for hours before descending with silent, precise precision on its quarry.",
+    "sprite": "/sprites/fearow-variant.png",
+    "evolvesFrom": "Spearow",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 64,
-    "dexNum": "064",
+    "id": 78,
+    "dexNum": "078",
     "name": "Catacurse",
     "species": "Lost Lantern Pokemon",
     "type1": "Ghost",
@@ -1533,11 +2301,21 @@
       "bst": 340
     },
     "dexEntry": "Catacurse is said to be born from a lost cat's spirit that took refuge inside an abandoned jack-o'-lantern. Its pumpkin mask glows with a soft, eerie light that flickers when it senses fear nearby. The vine on its head smolders with ghostly fire, and its tail burns with a spectral flame that never goes out — said to mark the boundary between the living and the spirit world.",
-    "sprite": "/sprites/catacurse.png"
+    "sprite": "/sprites/catacurse.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Hexpurr"
+    ],
+    "evoMethods": [
+      {
+        "into": "Hexpurr",
+        "method": "Level 28 at Night"
+      }
+    ]
   },
   {
-    "id": 65,
-    "dexNum": "065",
+    "id": 79,
+    "dexNum": "079",
     "name": "Hexpurr",
     "species": "Hexcraft Pokemon",
     "type1": "Ghost",
@@ -1557,11 +2335,21 @@
       "bst": 450
     },
     "dexEntry": "Hexpurr is said to be a spirit that has mastered the art of mischief and hexcraft. Its pumpkin head burns with cursed embers that never fade, and the eerie staff it wields is carved from its own spectral tail. When it waves the staff, nearby lights flicker and shadows twist into strange shapes. Legends claim that it guards the boundary between the living and the dead during the harvest moon.",
-    "sprite": "/sprites/hexpurr.png"
+    "sprite": "/sprites/hexpurr.png",
+    "evolvesFrom": "Catacurse",
+    "evolvesTo": [
+      "Hexaroyal"
+    ],
+    "evoMethods": [
+      {
+        "into": "Hexaroyal",
+        "method": "Level 42 during Harvest Night event"
+      }
+    ]
   },
   {
-    "id": 66,
-    "dexNum": "066",
+    "id": 80,
+    "dexNum": "080",
     "name": "Hexaroyal",
     "species": "Harvest Soveregn Pokemon",
     "type1": "Ghost",
@@ -1581,11 +2369,14 @@
       "bst": 540
     },
     "dexEntry": "Hexaroyal reigns over wandering souls with both grace and terror. Once a mischievous conjurer, it ascended to spectral royalty after mastering the balance between trickery and compassion. Its carved pumpkin crown glows like a lantern of judgment — the right eye burns softly with mercy, the left flares fiercely with wrath. On All Hallows' Eve, it blesses those who honor the departed and curses those who mock them.",
-    "sprite": "/sprites/hexaroyal.png"
+    "sprite": "/sprites/hexaroyal.png",
+    "evolvesFrom": "Hexpurr",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 67,
-    "dexNum": "067",
+    "id": 81,
+    "dexNum": "081",
     "name": "Mudkin",
     "species": "Harvest Guardian Pokemon",
     "type1": "Ground",
@@ -1605,11 +2396,21 @@
       "bst": 320
     },
     "dexEntry": "Formed from rain-soaked clay infused with harvest spirit energy, its heavy earthen body is soft but incredibly durable, reshaping itself to mend damage or repair the ground it walks on. Despite its unsettling grin, Mudkin is a gentle farmland guardian — patrolling fields, scaring off intruders, and warming the soil with its faint inner glow. Farmers consider its presence a blessing of fertile earth and plentiful harvest.",
-    "sprite": "/sprites/mudkin.png"
+    "sprite": "/sprites/mudkin.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Cloddrum"
+    ],
+    "evoMethods": [
+      {
+        "into": "Cloddrum",
+        "method": "Level 28 during the Day"
+      }
+    ]
   },
   {
-    "id": 68,
-    "dexNum": "068",
+    "id": 82,
+    "dexNum": "082",
     "name": "Cloddrum",
     "species": "Iron Earth Pokemon",
     "type1": "Ground",
@@ -1629,12 +2430,22 @@
       "bst": 440
     },
     "dexEntry": "Its body is now packed with dense minerals, forming rocky armor that rings like metal when struck. Its enormous arms, forged from layers of clay and ore, act as both tools and weapons — capable of digging vast trenches or leveling mountainsides. Each blow from its fists releases deep vibrations that revitalize barren land. Despite its intimidating frame, Cloddrum remains calm and purposeful, repairing and shaping the world with the patience of the earth itself.",
-    "sprite": "/sprites/cloddrum.png"
+    "sprite": "/sprites/cloddrum.png",
+    "evolvesFrom": "Mudkin",
+    "evolvesTo": [
+      "Terragrade"
+    ],
+    "evoMethods": [
+      {
+        "into": "Terragrade",
+        "method": "Level 42 during Fertile Land event"
+      }
+    ]
   },
   {
-    "id": 69,
-    "dexNum": "069",
-    "name": "Terragarde",
+    "id": 83,
+    "dexNum": "083",
+    "name": "Terragrade",
     "species": "Living Fortress Pokemon",
     "type1": "Ground",
     "type2": "Steel",
@@ -1653,11 +2464,14 @@
       "bst": 560
     },
     "dexEntry": "Its once-earthen body has fully fused with ore and mineral, becoming a living fortress of soil and steel. It stands immovable in ancient fields, its heavy steps shaping the land beneath it. When great droughts or calamities strike, Terragarde awakens to restore balance — its footsteps leaving behind fertile ground. Farmers and travelers tell tales of hearing its rhythmic tremors long before it appears, a reminder that the earth itself watches over them.",
-    "sprite": "/sprites/terragarde.png"
+    "sprite": "/sprites/terragrade.png",
+    "evolvesFrom": "Cloddrum",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 70,
-    "dexNum": "070",
+    "id": 84,
+    "dexNum": "084",
     "name": "Luminelk",
     "species": "Lantern Stag Pokemon",
     "type1": "Electric",
@@ -1677,11 +2491,21 @@
       "bst": 345
     },
     "dexEntry": "Its small antlers constantly emit gentle arcs of electricity that light up its surroundings like lanterns in the dark. Playful and loyal, it often uses its charged antlers to guide travelers through stormy weather. When excited its sparks intensify into dazzling flashes that can momentarily blind predators. Its bright antlers glow strongest when it senses kindness in others.",
-    "sprite": "/sprites/luminelk.png"
+    "sprite": "/sprites/luminelk.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Voltindra"
+    ],
+    "evoMethods": [
+      {
+        "into": "Voltindra",
+        "method": "Level 28 at Night"
+      }
+    ]
   },
   {
-    "id": 71,
-    "dexNum": "071",
+    "id": 85,
+    "dexNum": "085",
     "name": "Voltindra",
     "species": "Storm Mind Pokemon",
     "type1": "Electric",
@@ -1701,11 +2525,21 @@
       "bst": 455
     },
     "dexEntry": "As it evolves, its electric power fuses with psychic energy, allowing it to sense and manipulate atmospheric currents. Its glowing antlers pulse in rhythm with its brainwaves, projecting faint light patterns that calm allies or disorient foes. When thunderstorms approach, it raises its head to the sky and releases a harmonic pulse, guiding stray lightning away from vulnerable Pokémon. It communicates through subtle bursts of static and emotion rather than sound.",
-    "sprite": "/sprites/voltindra.png"
+    "sprite": "/sprites/voltindra.png",
+    "evolvesFrom": "Luminelk",
+    "evolvesTo": [
+      "Luminstag"
+    ],
+    "evoMethods": [
+      {
+        "into": "Luminstag",
+        "method": "Level 42 during Winter's Light event"
+      }
+    ]
   },
   {
-    "id": 72,
-    "dexNum": "072",
+    "id": 86,
+    "dexNum": "086",
     "name": "Luminstag",
     "species": "Aurora Stag Pokemon",
     "type1": "Electric",
@@ -1725,11 +2559,14 @@
       "bst": 570
     },
     "dexEntry": "Luminstag radiates an aura of calm power, its luminous antlers pulsing like twin thunderclouds filled with psychic energy. It senses and shapes electromagnetic fields with pure thought, guiding lightning away from danger and channeling it into protective barriers. Legends say it appears atop mountains before great storms, its glowing circuitry forming sacred patterns that stabilize the atmosphere. With intelligence surpassing most Pokémon, it communicates telepathically through flashes of light and faint echoes in the mind.",
-    "sprite": "/sprites/luminstag.png"
+    "sprite": "/sprites/luminstag.png",
+    "evolvesFrom": "Voltindra",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 73,
-    "dexNum": "073",
+    "id": 87,
+    "dexNum": "087",
     "name": "Cindimouse",
     "species": "Wisp Mouse Pokemon",
     "type1": "Fire",
@@ -1749,11 +2586,21 @@
       "bst": 195
     },
     "dexEntry": "Cindimouse are said to be born from wandering will-o-wisps that gather warmth inside abandoned hearths. Travelers who follow their flickering tails often find themselves safely guided out of dark forests or deserts. However, if angered, the tiny flames around its body flare up and scorch anything nearby.",
-    "sprite": "/sprites/cindimouse.png"
+    "sprite": "/sprites/cindimouse.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Pyroboa"
+    ],
+    "evoMethods": [
+      {
+        "into": "Pyroboa",
+        "method": "Level 16"
+      }
+    ]
   },
   {
-    "id": 74,
-    "dexNum": "074",
+    "id": 88,
+    "dexNum": "088",
     "name": "Pyroboa",
     "species": "Ember Guide Pokemon",
     "type1": "Fire",
@@ -1773,11 +2620,21 @@
       "bst": 335
     },
     "dexEntry": "Pyroboa use the floating flames on their tails to illuminate dark paths. According to old legends, travelers who follow the dancing lights of Pyroboa will be led safely home. However, those who attempt to capture its flames may find themselves surrounded by scorching fire.",
-    "sprite": "/sprites/pyroboa.png"
+    "sprite": "/sprites/pyroboa.png",
+    "evolvesFrom": "Cindimouse",
+    "evolvesTo": [
+      "Ignispirit"
+    ],
+    "evoMethods": [
+      {
+        "into": "Ignispirit",
+        "method": "Level 36"
+      }
+    ]
   },
   {
-    "id": 75,
-    "dexNum": "075",
+    "id": 89,
+    "dexNum": "089",
     "name": "Ignispirit",
     "species": "Spirit Flame Pokemon",
     "type1": "Fire",
@@ -1797,11 +2654,14 @@
       "bst": 530
     },
     "dexEntry": "Ignispirit are believed to be ancient guardians born from wandering spirit flames. In desert nights and deep forests, travelers sometimes see a ring of ghostly lights moving through the darkness. Those who follow them safely reach their destination, but those who disturb the flames risk being lost in a maze of burning spirits.",
-    "sprite": "/sprites/ignispirit.png"
+    "sprite": "/sprites/ignispirit.png",
+    "evolvesFrom": "Pyroboa",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 76,
-    "dexNum": "076",
+    "id": 90,
+    "dexNum": "090",
     "name": "Kapplet",
     "species": "Pond Spirit Pokemon",
     "type1": "Water",
@@ -1821,11 +2681,21 @@
       "bst": 205
     },
     "dexEntry": "Kapplet dwell in quiet ponds and shaded riverbanks. The water they carry atop their heads is said to be drawn from the purest underground springs. Old legends say travelers who help refill a weakened Kapplet’s water bowl will be guided safely through dangerous wetlands.",
-    "sprite": "/sprites/kapplet.png"
+    "sprite": "/sprites/kapplet.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Kappond"
+    ],
+    "evoMethods": [
+      {
+        "into": "Kappond",
+        "method": "Level 16"
+      }
+    ]
   },
   {
-    "id": 77,
-    "dexNum": "077",
+    "id": 91,
+    "dexNum": "091",
     "name": "Kappond",
     "species": "River Spirit Pokemon",
     "type1": "Water",
@@ -1845,11 +2715,21 @@
       "bst": 355
     },
     "dexEntry": "Kappond are known to guard rivers and springs where the water is especially pure. It is said that the water in the bowl atop its head contains mysterious power. When angered, Kappond can manipulate nearby water currents to drag intruders away from its territory.",
-    "sprite": "/sprites/kappond.png"
+    "sprite": "/sprites/kappond.png",
+    "evolvesFrom": "Kapplet",
+    "evolvesTo": [
+      "Kappashido"
+    ],
+    "evoMethods": [
+      {
+        "into": "Kappashido",
+        "method": "Level 36"
+      }
+    ]
   },
   {
-    "id": 78,
-    "dexNum": "078",
+    "id": 92,
+    "dexNum": "092",
     "name": "Kappashido",
     "species": "River Guardian Pokemon",
     "type1": "Water",
@@ -1869,11 +2749,14 @@
       "bst": 530
     },
     "dexEntry": "Kappashido are ancient guardians of rivers and wetlands. Legends say they once challenged warriors to tests of strength and honor. The sacred water they carry atop their heads is said to hold immense power—if it spills, their strength fades until they can refill it in a pure spring.",
-    "sprite": "/sprites/kappashido.png"
+    "sprite": "/sprites/kappashido.png",
+    "evolvesFrom": "Kappond",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 79,
-    "dexNum": "079",
+    "id": 93,
+    "dexNum": "093",
     "name": "Mosspryte",
     "species": "Forest Spirit Pokemon",
     "type1": "Grass",
@@ -1893,12 +2776,22 @@
       "bst": 170
     },
     "dexEntry": "Mosspryte are said to be born from seeds that fall in ancient forests untouched by humans. They silently watch over woodland ecosystems, helping plants grow and guiding lost Pokémon back to safe paths. When a Mosspryte disappears, flowers often bloom in the spot where it once stood.",
-    "sprite": "/sprites/mosspryte.png"
+    "sprite": "/sprites/mosspryte.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Sylphern"
+    ],
+    "evoMethods": [
+      {
+        "into": "Sylphern",
+        "method": "Level 16"
+      }
+    ]
   },
   {
-    "id": 80,
-    "dexNum": "080",
-    "name": "Slyphern",
+    "id": 94,
+    "dexNum": "094",
+    "name": "Sylphern",
     "species": "Woodland Spirit Pokemon",
     "type1": "Grass",
     "type2": null,
@@ -1917,11 +2810,21 @@
       "bst": 330
     },
     "dexEntry": "Sylphern quietly patrol ancient forests, ensuring the balance of plant life remains undisturbed. It can accelerate the growth of moss, vines, and flowers wherever it walks. Many believe that Sylphern are the young guardians chosen by the forest itself.",
-    "sprite": "/sprites/slyphern.png"
+    "sprite": "/sprites/sylphern.png",
+    "evolvesFrom": "Mosspryte",
+    "evolvesTo": [
+      "Verderion"
+    ],
+    "evoMethods": [
+      {
+        "into": "Verderion",
+        "method": "Level 36"
+      }
+    ]
   },
   {
-    "id": 81,
-    "dexNum": "081",
+    "id": 95,
+    "dexNum": "095",
     "name": "Verderion",
     "species": "Ancient Grove Pokemon",
     "type1": "Grass",
@@ -1940,12 +2843,15 @@
       "spd": 95,
       "bst": 530
     },
-    "dexEntry": "Verdorion are said to dwell deep within forests that have existed for centuries. It rarely appears to humans, but legends say it protects ancient groves from destruction. Wherever Verdorion walks, dying forests begin to flourish once again.",
-    "sprite": "/sprites/verderion.png"
+    "dexEntry": "Verderion are said to dwell deep within forests that have existed for centuries. It rarely appears to humans, but legends say it protects ancient groves from destruction. Wherever Verderion walks, dying forests begin to flourish once again.",
+    "sprite": "/sprites/verderion.png",
+    "evolvesFrom": "Sylphern",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 82,
-    "dexNum": "082",
+    "id": 96,
+    "dexNum": "096",
     "name": "Tanukindle",
     "species": "Trickster Tanuki Pokemon",
     "type1": "Normal",
@@ -1965,11 +2871,21 @@
       "bst": 280
     },
     "dexEntry": "Tanukindle are playful tricksters that live near forests and villages. They are known to disguise themselves as ordinary objects to startle travelers. Despite their pranks, they rarely mean harm and often return lost items they have secretly borrowed.",
-    "sprite": "/sprites/tanukindle.png"
+    "sprite": "/sprites/tanukindle.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Danukage"
+    ],
+    "evoMethods": [
+      {
+        "into": "Danukage",
+        "method": "Level 30"
+      }
+    ]
   },
   {
-    "id": 83,
-    "dexNum": "083",
+    "id": 97,
+    "dexNum": "097",
     "name": "Danukage",
     "species": "Illusion Tanuki Pokemon",
     "type1": "Normal",
@@ -1989,11 +2905,14 @@
       "bst": 500
     },
     "dexEntry": "Danukage are legendary pranksters said to roam forests near villages. Using powerful illusions, they can disguise themselves as monks, statues, or even entire houses. Despite their mischievous tricks, many stories claim Danukage secretly protect the forests they inhabit.",
-    "sprite": "/sprites/danukage.png"
+    "sprite": "/sprites/danukage.png",
+    "evolvesFrom": "Tanukindle",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 84,
-    "dexNum": "084",
+    "id": 98,
+    "dexNum": "098",
     "name": "Onibrawl",
     "species": "Ogre Warrior Pokemon",
     "type1": "Fighting",
@@ -2013,11 +2932,21 @@
       "bst": 355
     },
     "dexEntry": "Onibrawl are said to live near volcanic mountains where they train their strength by smashing boulders and sparring with each other. Legends say that when their horns ignite with flame, an Onibrawl is preparing to challenge the strongest opponent it can find.",
-    "sprite": "/sprites/onibrawl.png"
+    "sprite": "/sprites/onibrawl.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Infernogre"
+    ],
+    "evoMethods": [
+      {
+        "into": "Infernogre",
+        "method": "Level 36"
+      }
+    ]
   },
   {
-    "id": 85,
-    "dexNum": "085",
+    "id": 99,
+    "dexNum": "099",
     "name": "Infernogre",
     "species": "Hellfire Oni Pokemon",
     "type1": "Fighting",
@@ -2037,11 +2966,14 @@
       "bst": 530
     },
     "dexEntry": "Infernogre are feared as the rulers of volcanic mountains. Ancient tales claim that when Infernogre clash in battle, their blows echo like thunder and sparks rain from the sky. Despite their terrifying power, they follow a strict code of honor and respect only the strongest opponents.",
-    "sprite": "/sprites/infernogre.png"
+    "sprite": "/sprites/infernogre.png",
+    "evolvesFrom": "Onibrawl",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 86,
-    "dexNum": "086",
+    "id": 100,
+    "dexNum": "100",
     "name": "Chimet",
     "species": "Chime Pokemon",
     "type1": "Fairy",
@@ -2061,11 +2993,21 @@
       "bst": 250
     },
     "dexEntry": "Chimet gathers in areas with gentle winds, where its soft ringing is said to calm uneasy hearts. People often hang charms to invite it closer, unaware that its evolution brings a far more mischievous presence.",
-    "sprite": "/sprites/chimet.png"
+    "sprite": "/sprites/chimet.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Bellitoll"
+    ],
+    "evoMethods": [
+      {
+        "into": "Bellitoll",
+        "method": "Level 25 at Night"
+      }
+    ]
   },
   {
-    "id": 87,
-    "dexNum": "087",
+    "id": 101,
+    "dexNum": "101",
     "name": "Bellitoll",
     "species": "Warding Bell Pokemon",
     "type1": "Fairy",
@@ -2085,11 +3027,14 @@
       "bst": 345
     },
     "dexEntry": "Bellitoll gathers near homes where people hang protective charms. Though it appears harmless, its gentle chime can lull listeners into a trance. Legends say those who follow its sound into the night are never seen again—only the faint ringing remains.",
-    "sprite": "/sprites/bellitoll.png"
+    "sprite": "/sprites/bellitoll.png",
+    "evolvesFrom": "Chimet",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 88,
-    "dexNum": "088",
+    "id": 102,
+    "dexNum": "102",
     "name": "Silhouraith",
     "species": "Shadow Lurker Pokemon",
     "type1": "Dark",
@@ -2109,11 +3054,14 @@
       "bst": 493
     },
     "dexEntry": "Silhouraith is said to be a shadow that lost its original body and gained a will of its own. It silently follows travelers at dusk, mimicking their movements. Those who notice it report feeling watched—even when alone.",
-    "sprite": "/sprites/silhouraith.png"
+    "sprite": "/sprites/silhouraith.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 89,
-    "dexNum": "089",
+    "id": 103,
+    "dexNum": "103",
     "name": "Mantikrawl",
     "species": "Siege Mantis Pokemon",
     "type1": "Bug",
@@ -2133,11 +3081,14 @@
       "bst": 496
     },
     "dexEntry": "Mantikrawl are said to be the reincarnation of ancient battlefield spirits that refused to fall. They wander old ruins, challenging any who approach. The dents in their armor are not signs of weakness, but proof of every battle they have survived—and won.",
-    "sprite": "/sprites/mantikrawl.png"
+    "sprite": "/sprites/mantikrawl.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 90,
-    "dexNum": "090",
+    "id": 104,
+    "dexNum": "104",
     "name": "Whisprout",
     "species": "Oracle Sprout Pokemon",
     "type1": "Grass",
@@ -2157,11 +3108,21 @@
       "bst": 372
     },
     "dexEntry": "Whisprout are said to hear echoes of the future carried on the wind. They gather in quiet forests, where they silently warn each other of danger seconds before it arrives. Travelers who follow their subtle movements may avoid unseen threats—but those who ignore them often find themselves lost.",
-    "sprite": "/sprites/whisprout.png"
+    "sprite": "/sprites/whisprout.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Oraculora"
+    ],
+    "evoMethods": [
+      {
+        "into": "Oraculora",
+        "method": "Level 32"
+      }
+    ]
   },
   {
-    "id": 91,
-    "dexNum": "091",
+    "id": 105,
+    "dexNum": "105",
     "name": "Oraculora",
     "species": "Prophecy Bloom Pokemon",
     "type1": "Grass",
@@ -2181,11 +3142,14 @@
       "bst": 540
     },
     "dexEntry": "Oraculora are revered as living oracles deep within ancient forests. It is said they perceive countless possible futures at once, guiding lost Pokémon with silent gestures. However, when angered, they trap opponents in illusions of their own downfall, striking only when escape is impossible.",
-    "sprite": "/sprites/oraculora.png"
+    "sprite": "/sprites/oraculora.png",
+    "evolvesFrom": "Whisprout",
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 92,
-    "dexNum": "092",
+    "id": 106,
+    "dexNum": "106",
     "name": "Raijikara",
     "species": "Thunder Cicada Pokemon",
     "type1": "Bug",
@@ -2205,11 +3169,14 @@
       "bst": 479
     },
     "dexEntry": "After remaining underground for years, Raijikara emerge during thunderstorms. Their cries resonate like rolling thunder, and the vibrations they produce can shatter stone. Ancient folklore claims their song is what summons lightning from the sky.",
-    "sprite": "/sprites/raijikara.png"
+    "sprite": "/sprites/raijikara.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   },
   {
-    "id": 93,
-    "dexNum": "093",
+    "id": 107,
+    "dexNum": "107",
     "name": "Glaciadon",
     "species": "Permafrost Beast Pokemon",
     "type1": "Ice",
@@ -2229,6 +3196,9 @@
       "bst": 582
     },
     "dexEntry": "Glaciadon are believed to be remnants of the Ice Age, preserved within layers of permafrost for thousands of years. When awakened, they roam silently across frozen lands, their movements causing sudden blizzards. Legends say entire valleys were buried in ice after a herd passed through.",
-    "sprite": "/sprites/glaciadon.png"
+    "sprite": "/sprites/glaciadon.png",
+    "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
   }
 ]
