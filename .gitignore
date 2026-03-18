@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# NOTE: src/data/fakemon.json is GENERATED — do not edit by hand.
+# Regenerate with: npm run data
