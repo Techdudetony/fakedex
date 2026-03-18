@@ -11,7 +11,7 @@ export default function TypeBadges({ type }) {
                 backgroundColor: bg,
                 color: text,
                 fontFamily: 'var(--font-mono)',
-                fontSize: '0.65rem',
+                fontSize: '0.75rem',
                 fontWeight: 500,
                 letterSpacing: '0.08em',
                 padding: '2px 8px',

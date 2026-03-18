@@ -378,8 +378,11 @@ export default function Home() {
 
       {/* ── Modal ───────────────────────────────────────────────── */}
       {selectedMon && (
-        <MonModal mon={selectedMon} onClose={() => setSelectedMon(null)} />
-      )}
+        <MonModal mon={selectedMon} 
+        onClose={() => setSelectedMon(null)}
+        onNavigate={(nextMon) => setSelectedMon(nextMon)} 
+      />
+    )}
     </div>
   )
 }
