@@ -43,7 +43,7 @@ export default function StatBar({ statKey, value, delay = 0 }) {
             {/* Label */}
             <span style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '0.6rem',
+                fontSize: '0.8rem',
                 color: 'var(--text-dim)',
                 width: '32px',
                 textAlign: 'right',
@@ -75,7 +75,7 @@ export default function StatBar({ statKey, value, delay = 0 }) {
             {/* Value */}
             <span style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '0.65rem',
+                fontSize: '0.75rem',
                 color: 'var(--text)',
                 width: '28px',
                 flexShrink: 0,
