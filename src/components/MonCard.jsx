@@ -15,6 +15,9 @@ export default function MonCard({ mon, onClick }) {
         cursor: 'pointer',
         textAlign: 'left',
         width: '100%',
+        height: '260px',
+        display: 'flex',
+        flexDirection: 'column',
         transition: 'transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease',
         position: 'relative',
         overflow: 'hidden',
@@ -118,6 +121,7 @@ export default function MonCard({ mon, onClick }) {
       {/* BST pill */}
       <div style={{
         display: 'inline-flex',
+        marginTop: 'auto',
         alignItems: 'center',
         gap: '4px',
         background: 'var(--surface-2)',
