@@ -67,7 +67,7 @@ export default function MonModal({ mon, onClose, onNavigate }) {
             border:       '1px solid var(--border)',
             borderRadius: '16px',
             width:        '100%',
-            maxWidth:     '900px',
+            maxWidth:     'min(96vw, 1400px)',
             maxHeight:    '90vh',
             overflow:     'hidden',
             boxShadow:    '0 0 80px rgba(0,0,0,0.8), 0 0 30px rgba(204,18,18,0.1)',
@@ -87,8 +87,9 @@ export default function MonModal({ mon, onClose, onNavigate }) {
 
             {/* ── LEFT — Art panel ─────────────────────────────────── */}
             <div style={{
-              width:          '380px',
-              minWidth:       '380px',
+              width:          activeTab === 'EVOLUTION' ? '160px' : '380px',
+              minWidth:       activeTab === 'EVOLUTION' ? '160px' : '380px',
+              transition:     'width 0.25s ease, min-width 0.25 ease',
               flexShrink:     0,
               background:     'linear-gradient(160deg, #0d0d0d 0%, #1a0808 60%, #0d0d1a 100%)',
               borderRight:    '1px solid var(--border)',
@@ -111,6 +112,8 @@ export default function MonModal({ mon, onClose, onNavigate }) {
                 lineHeight: 1,
                 userSelect: 'none',
                 letterSpacing: '0.02em',
+                opacity:    activeTab === 'EVOLUTION' ? 0 : 1,
+                transition: 'opacity 0.2s ease',
               }}>
                 #{mon.dexNum}
               </div>
@@ -132,13 +135,14 @@ export default function MonModal({ mon, onClose, onNavigate }) {
               <div
                 onClick={() => !imgError && setViewingSprite(true)}
                 style={{
-                  width:    '300px',
-                  height:   '300px',
+                  width:    activeTab === 'EVOLUTION' ? '100px' : '300px',
+                  height:   activeTab === 'EVOLUTION' ? '100px' : '300px',
                   display:  'flex',
                   alignItems:     'center',
                   justifyContent: 'center',
                   cursor:   imgError ? 'default' : 'zoom-in',
-                  marginBottom: '120px',
+                  marginBottom: activeTab === 'EVOLUTION' ? '8px' : '120px',
+                  transition: 'all 0.25s ease',
                   flexShrink: 0,
                 }}
               >
@@ -183,7 +187,8 @@ export default function MonModal({ mon, onClose, onNavigate }) {
                 {/* Name */}
                 <div style={{
                   fontFamily:    'var(--font-display)',
-                  fontSize:      '2rem',
+                  fontSize:      activeTab === 'EVOLUTION' ? '1rem' : '2rem',
+                  transition:    'font-size 0.2s ease',
                   letterSpacing: '0.04em',
                   color:         'var(--text)',
                   lineHeight:    1,
@@ -198,6 +203,7 @@ export default function MonModal({ mon, onClose, onNavigate }) {
                   fontSize:      '0.65rem',
                   color:         'var(--text-dim)',
                   letterSpacing: '0.04em',
+                  display:       activeTab === 'EVOLUTION' ? 'none' : 'block',
                 }}>
                   #{mon.dexNum} · {mon.species}
                 </div>
@@ -289,8 +295,9 @@ export default function MonModal({ mon, onClose, onNavigate }) {
               {/* Tab content — scrollable */}
               <div style={{
                 flex:       1,
-                overflowY:  'auto',
+                overflow:  'auto',
                 padding:    '20px',
+                minHeight:  0,
               }}>
 
                 {/* ── INFO TAB ─────────────────────────────────────── */}
@@ -429,7 +436,7 @@ export default function MonModal({ mon, onClose, onNavigate }) {
 
                 {/* ── EVOLUTION TAB ─────────────────────────────────── */}
                 {activeTab === 'EVOLUTION' && (
-                  <div>
+                  <div style={{ overflow: 'auto', width: '100%', height: '100%' }}>
                     {hasEvolution ? (
                       <EvolutionChain mon={mon} onNavigate={onNavigate} />
                     ) : (

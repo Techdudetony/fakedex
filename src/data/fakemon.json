@@ -3226,7 +3226,7 @@
     "sprite": "/sprites/mimettle.png",
     "evolvesFrom": null,
     "evolvesTo": [
-      "Mimettle",
+      "Mimetheon",
       "Verdantheon",
       "Abyssotheon",
       "Pyrotheon",
@@ -3247,7 +3247,7 @@
     ],
     "evoMethods": [
       {
-        "into": "Mimettle",
+        "into": "Mimetheon",
         "method": "Level 50"
       },
       {
