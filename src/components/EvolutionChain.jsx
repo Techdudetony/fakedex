@@ -251,7 +251,6 @@ export default function EvolutionChain({ mon, onNavigate }) {
       border: '1px solid var(--border)',
       borderRadius: '8px',
       padding: '14px 16px',
-      marginTop: '16px',
       overflowX: 'auto',
     }}>
       <div style={{
