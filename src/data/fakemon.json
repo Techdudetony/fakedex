@@ -683,7 +683,7 @@
       "spd": 65,
       "bst": 415
     },
-    "dexEntry": "Gloamveil drifts silently through the fog of Eterna Forest at dusk.\r\nThe mask it wears grows larger as it absorbs lingering emotions from travelers who pass through the woods at night.",
+    "dexEntry": "Gloamveil drifts silently through the fog of Eterna Forest at dusk.\nThe mask it wears grows larger as it absorbs lingering emotions from travelers who pass through the woods at night.",
     "sprite": "/sprites/gloamveil.png",
     "evolvesFrom": "Masklet",
     "evolvesTo": [
@@ -2445,7 +2445,7 @@
   {
     "id": 83,
     "dexNum": "083",
-    "name": "Terragrade",
+    "name": "Terragarde",
     "species": "Living Fortress Pokemon",
     "type1": "Ground",
     "type2": "Steel",
@@ -2464,7 +2464,7 @@
       "bst": 560
     },
     "dexEntry": "Its once-earthen body has fully fused with ore and mineral, becoming a living fortress of soil and steel. It stands immovable in ancient fields, its heavy steps shaping the land beneath it. When great droughts or calamities strike, Terragarde awakens to restore balance — its footsteps leaving behind fertile ground. Farmers and travelers tell tales of hearing its rhythmic tremors long before it appears, a reminder that the earth itself watches over them.",
-    "sprite": "/sprites/terragrade.png",
+    "sprite": "/sprites/terragarde.png",
     "evolvesFrom": "Cloddrum",
     "evolvesTo": [],
     "evoMethods": []
@@ -2779,11 +2779,11 @@
     "sprite": "/sprites/mosspryte.png",
     "evolvesFrom": null,
     "evolvesTo": [
-      "Sylphern"
+      "Slyphern"
     ],
     "evoMethods": [
       {
-        "into": "Sylphern",
+        "into": "Slyphern",
         "method": "Level 16"
       }
     ]
@@ -2845,7 +2845,7 @@
     },
     "dexEntry": "Verderion are said to dwell deep within forests that have existed for centuries. It rarely appears to humans, but legends say it protects ancient groves from destruction. Wherever Verderion walks, dying forests begin to flourish once again.",
     "sprite": "/sprites/verderion.png",
-    "evolvesFrom": "Sylphern",
+    "evolvesFrom": "Slyphern",
     "evolvesTo": [],
     "evoMethods": []
   },
@@ -3198,6 +3198,611 @@
     "dexEntry": "Glaciadon are believed to be remnants of the Ice Age, preserved within layers of permafrost for thousands of years. When awakened, they roam silently across frozen lands, their movements causing sudden blizzards. Legends say entire valleys were buried in ice after a herd passed through.",
     "sprite": "/sprites/glaciadon.png",
     "evolvesFrom": null,
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 108,
+    "dexNum": "108",
+    "name": "Mimettle",
+    "species": "Blank Form Pokemon",
+    "type1": "Normal",
+    "type2": null,
+    "ability1": "Adaptability",
+    "ability2": "Run Away",
+    "abilityHidden": "Protean",
+    "height": "1'04\"",
+    "weight": "9.2 lb",
+    "stats": {
+      "hp": 60,
+      "atk": 60,
+      "def": 60,
+      "spAtk": 60,
+      "spDef": 60,
+      "spd": 60,
+      "bst": 360
+    },
+    "dexEntry": "It adapts its body to match its surroundings, but its transformations are incomplete. It evolves differently depending on the environment it experiences.",
+    "sprite": "/sprites/mimettle.png",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "Mimettle",
+      "Verdantheon",
+      "Abyssotheon",
+      "Pyrotheon",
+      "Voltheon",
+      "Terratheon",
+      "Lithotheon",
+      "Glaciatheon",
+      "Venotheon",
+      "Mentatheon",
+      "Spectratheon",
+      "Umbretheon",
+      "Ferratheon",
+      "Aeralitheon",
+      "Swarmetheon",
+      "Striketheon",
+      "Originatheon",
+      "Fabletheon"
+    ],
+    "evoMethods": [
+      {
+        "into": "Mimettle",
+        "method": "Level 50"
+      },
+      {
+        "into": "Verdantheon",
+        "method": "Level 50 with Leaf Stone"
+      },
+      {
+        "into": "Abyssotheon",
+        "method": "Level 50 with Water Stone"
+      },
+      {
+        "into": "Pyrotheon",
+        "method": "Level 50 with Fire Stone"
+      },
+      {
+        "into": "Voltheon",
+        "method": "Level 50 with Thunder Stone"
+      },
+      {
+        "into": "Terratheon",
+        "method": "Level 50 in Sandstorm"
+      },
+      {
+        "into": "Lithotheon",
+        "method": "Level 50 in Mt Moon"
+      },
+      {
+        "into": "Glaciatheon",
+        "method": "Level 50 in Snow"
+      },
+      {
+        "into": "Venotheon",
+        "method": "Level 50 in Safari Zone"
+      },
+      {
+        "into": "Mentatheon",
+        "method": "Level 50 duing the Day knowing a psychic move"
+      },
+      {
+        "into": "Spectratheon",
+        "method": "Level 50 during Night"
+      },
+      {
+        "into": "Umbretheon",
+        "method": "Level 50 with Dusk Stone"
+      },
+      {
+        "into": "Ferratheon",
+        "method": "Level 50 holding Metal Coat"
+      },
+      {
+        "into": "Aeralitheon",
+        "method": "Level 50 knowing Roost"
+      },
+      {
+        "into": "Swarmetheon",
+        "method": "Level 50 knowing Pin Missle"
+      },
+      {
+        "into": "Striketheon",
+        "method": "Level 50 and defeating 20 Dark types"
+      },
+      {
+        "into": "Originatheon",
+        "method": "Level 50 near Sky Pillar"
+      },
+      {
+        "into": "Fabletheon",
+        "method": "Level 50 during the Day knowing a fairy move"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "dexNum": "109",
+    "name": "Mimetheon",
+    "species": "Echo Form Pokemon",
+    "type1": "Normal",
+    "type2": null,
+    "ability1": "Adaptability",
+    "ability2": "Anticipation",
+    "abilityHidden": "Protean",
+    "height": "3'07\"",
+    "weight": "48.6 lb",
+    "stats": {
+      "hp": 86,
+      "atk": 105,
+      "def": 80,
+      "spAtk": 85,
+      "spDef": 132,
+      "spd": 115,
+      "bst": 603
+    },
+    "dexEntry": "It studies its opponents and subtly alters its form to counter them. Its body reacts faster than conscious thought, adapting in the middle of battle.",
+    "sprite": "/sprites/mimetheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 110,
+    "dexNum": "110",
+    "name": "Verdantheon",
+    "species": "Verdant Form Pokemon",
+    "type1": "Grass",
+    "type2": "Normal",
+    "ability1": "Overgrow",
+    "ability2": "Natural Cure",
+    "abilityHidden": "Protean",
+    "height": "6'02\"",
+    "weight": "158.7 lb",
+    "stats": {
+      "hp": 115,
+      "atk": 120,
+      "def": 90,
+      "spAtk": 125,
+      "spDef": 125,
+      "spd": 110,
+      "bst": 685
+    },
+    "dexEntry": "It nurtures plant life wherever it roams. Forests where it appears grow dense and vibrant overnight, as if responding to its presence.",
+    "sprite": "/sprites/verdantheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 111,
+    "dexNum": "111",
+    "name": "Abyssotheon",
+    "species": "Tidal Form Pokemon",
+    "type1": "Water",
+    "type2": "Normal",
+    "ability1": "Torrent",
+    "ability2": "Water Absorb",
+    "abilityHidden": "Protean",
+    "height": "6'06\"",
+    "weight": "214.3 lb",
+    "stats": {
+      "hp": 105,
+      "atk": 120,
+      "def": 107,
+      "spAtk": 120,
+      "spDef": 107,
+      "spd": 86,
+      "bst": 645
+    },
+    "dexEntry": "It moves with the rhythm of the tides. Those who follow it across the sea are often led safely to shore, though its intentions remain unknown.",
+    "sprite": "/sprites/abyssotheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 112,
+    "dexNum": "112",
+    "name": "Pyrotheon",
+    "species": "Infernal Form Pokemon",
+    "type1": "Fire",
+    "type2": "Normal",
+    "ability1": "Blaze",
+    "ability2": "Flash Fire",
+    "abilityHidden": "Protean",
+    "height": "7'04\"",
+    "weight": "489.2 lb",
+    "stats": {
+      "hp": 150,
+      "atk": 140,
+      "def": 120,
+      "spAtk": 119,
+      "spDef": 115,
+      "spd": 115,
+      "bst": 759
+    },
+    "dexEntry": "Its body burns with an intense internal flame. Entire fields have been reduced to ash after it passed through without slowing.",
+    "sprite": "/sprites/pyrotheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 113,
+    "dexNum": "113",
+    "name": "Voltheon",
+    "species": "Stormflash Pokemon",
+    "type1": "Electric",
+    "type2": "Normal",
+    "ability1": "Motor Drive",
+    "ability2": "Lightning Rod",
+    "abilityHidden": "Protean",
+    "height": "5'11\"",
+    "weight": "132.4 lb",
+    "stats": {
+      "hp": 105,
+      "atk": 125,
+      "def": 120,
+      "spAtk": 110,
+      "spDef": 105,
+      "spd": 140,
+      "bst": 705
+    },
+    "dexEntry": "It moves faster than the eye can follow, striking like a flash of lightning. Thunder is often heard only after it has already passed.",
+    "sprite": "/sprites/voltheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 114,
+    "dexNum": "114",
+    "name": "Terratheon",
+    "species": "Worldroot Pokemon",
+    "type1": "Ground",
+    "type2": "Normal",
+    "ability1": "Sand Stream",
+    "ability2": "Solid Rock",
+    "abilityHidden": "Protean",
+    "height": "7'10\"",
+    "weight": "812.4 lb",
+    "stats": {
+      "hp": 108,
+      "atk": 160,
+      "def": 121,
+      "spAtk": 165,
+      "spDef": 154,
+      "spd": 98,
+      "bst": 806
+    },
+    "dexEntry": "It moves slowly but reshapes the land with each step. Entire landscapes have changed after it passed through an area.",
+    "sprite": "/sprites/terratheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 115,
+    "dexNum": "115",
+    "name": "Lithotheon",
+    "species": "Relic Form Pokemon",
+    "type1": "Rock",
+    "type2": "Normal",
+    "ability1": "Sturdy",
+    "ability2": "Rock Head",
+    "abilityHidden": "Protean",
+    "height": "6'05\"",
+    "weight": "529.8 lb",
+    "stats": {
+      "hp": 116,
+      "atk": 130,
+      "def": 90,
+      "spAtk": 110,
+      "spDef": 135,
+      "spd": 95,
+      "bst": 676
+    },
+    "dexEntry": "It remains motionless for long periods, blending in with stone structures. It awakens only when it senses disturbances nearby.",
+    "sprite": "/sprites/lithotheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 116,
+    "dexNum": "116",
+    "name": "Glaciatheon",
+    "species": "Frostveil Pokemon",
+    "type1": "Ice",
+    "type2": "Normal",
+    "ability1": "Snow Cloak",
+    "ability2": "Ice Body",
+    "abilityHidden": "Protean",
+    "height": "5'08\"",
+    "weight": "96.3 lb",
+    "stats": {
+      "hp": 83,
+      "atk": 154,
+      "def": 85,
+      "spAtk": 157,
+      "spDef": 115,
+      "spd": 160,
+      "bst": 754
+    },
+    "dexEntry": "It moves silently through frozen landscapes, freezing the air around it. Prey often collapses from the cold before ever seeing it.",
+    "sprite": "/sprites/glaciatheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 117,
+    "dexNum": "117",
+    "name": "Venotheon",
+    "species": "Toximorph Pokemon",
+    "type1": "Poison",
+    "type2": "Normal",
+    "ability1": "Poison Touch",
+    "ability2": "Merciless",
+    "abilityHidden": "Protean",
+    "height": "5'06\"",
+    "weight": "118.9 lb",
+    "stats": {
+      "hp": 75,
+      "atk": 115,
+      "def": 100,
+      "spAtk": 109,
+      "spDef": 120,
+      "spd": 132,
+      "bst": 651
+    },
+    "dexEntry": "It releases a nearly invisible toxin as it moves. Those exposed often feel its effects long after it has disappeared.",
+    "sprite": "/sprites/venotheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 118,
+    "dexNum": "118",
+    "name": "Mentatheon",
+    "species": "Mindform Pokemon",
+    "type1": "Psychic",
+    "type2": "Normal",
+    "ability1": "Synchronize",
+    "ability2": "Magic Guard",
+    "abilityHidden": "Protean",
+    "height": "5'10\"",
+    "weight": "102-7 lb",
+    "stats": {
+      "hp": 74,
+      "atk": 105,
+      "def": 135,
+      "spAtk": 150,
+      "spDef": 138,
+      "spd": 85,
+      "bst": 687
+    },
+    "dexEntry": "It perceives events moments before they occur. Its body moves only when necessary, guided entirely by its foresight.",
+    "sprite": "/sprites/mentatheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 119,
+    "dexNum": "119",
+    "name": "Spectratheon",
+    "species": "Phaseform Pokemon",
+    "type1": "Ghost",
+    "type2": "Normal",
+    "ability1": "Infiltrator",
+    "ability2": "Cursed Body",
+    "abilityHidden": "Protean",
+    "height": "5'09\"",
+    "weight": "0.4 lb",
+    "stats": {
+      "hp": 110,
+      "atk": 100,
+      "def": 140,
+      "spAtk": 135,
+      "spDef": 100,
+      "spd": 151,
+      "bst": 736
+    },
+    "dexEntry": "It phases in and out of reality without warning. Some believe it exists across multiple moments at once.",
+    "sprite": "/sprites/spectratheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 120,
+    "dexNum": "120",
+    "name": "Umbretheon",
+    "species": "Shade Form Pokemon",
+    "type1": "Dark",
+    "type2": "Normal",
+    "ability1": "Pressure",
+    "ability2": "Prankster",
+    "abilityHidden": "Protean",
+    "height": "6'00\"",
+    "weight": "167.5 lb",
+    "stats": {
+      "hp": 140,
+      "atk": 112,
+      "def": 106,
+      "spAtk": 90,
+      "spDef": 120,
+      "spd": 124,
+      "bst": 692
+    },
+    "dexEntry": "It lurks within shadows, silently observing its prey. By the time it reveals itself, escape is already impossible.",
+    "sprite": "/sprites/umbretheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 121,
+    "dexNum": "121",
+    "name": "Ferratheon",
+    "species": "Aegis Form Pokemon",
+    "type1": "Steel",
+    "type2": "Normal",
+    "ability1": "Slow Start",
+    "ability2": "Battle Armor",
+    "abilityHidden": "Protean",
+    "height": "8'02\"",
+    "weight": "1204.6 lb",
+    "stats": {
+      "hp": 216,
+      "atk": 154,
+      "def": 250,
+      "spAtk": 140,
+      "spDef": 85,
+      "spd": 130,
+      "bst": 975
+    },
+    "dexEntry": "Its body is so heavily reinforced that it moves slowly at first. Once it fully activates, nothing can stand against its power.",
+    "sprite": "/sprites/ferratheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 122,
+    "dexNum": "122",
+    "name": "Aeralitheon",
+    "species": "Skydrift Pokemon",
+    "type1": "Flying",
+    "type2": "Normal",
+    "ability1": "Gale Wings",
+    "ability2": "Aerilate",
+    "abilityHidden": "Protean",
+    "height": "5'07\"",
+    "weight": "64.8 lbs",
+    "stats": {
+      "hp": 85,
+      "atk": 120,
+      "def": 100,
+      "spAtk": 135,
+      "spDef": 80,
+      "spd": 112,
+      "bst": 632
+    },
+    "dexEntry": "It rides high-altitude winds without effort. Some say it never truly lands, drifting endlessly across the skies.",
+    "sprite": "/sprites/aeralitheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 123,
+    "dexNum": "123",
+    "name": "Swarmetheon",
+    "species": "Colony Form Pokemon",
+    "type1": "Bug",
+    "type2": "Normal",
+    "ability1": "Swarm",
+    "ability2": "Shed Skin",
+    "abilityHidden": "Protean",
+    "height": "4'11\"",
+    "weight": "142.8 lb",
+    "stats": {
+      "hp": 126,
+      "atk": 110,
+      "def": 102,
+      "spAtk": 80,
+      "spDef": 93,
+      "spd": 103,
+      "bst": 614
+    },
+    "dexEntry": "It moves with perfect coordination, as if guided by many minds at once. Its actions are precise, efficient, and never wasted.",
+    "sprite": "/sprites/swarmetheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 124,
+    "dexNum": "124",
+    "name": "Striketheon",
+    "species": "Mastery Form Pokemon",
+    "type1": "Fighting",
+    "type2": "Normal",
+    "ability1": "Inner Focus",
+    "ability2": "Huge Power",
+    "abilityHidden": "Protean",
+    "height": "6'06\"",
+    "weight": "238.4 lb",
+    "stats": {
+      "hp": 100,
+      "atk": 180,
+      "def": 145,
+      "spAtk": 180,
+      "spDef": 108,
+      "spd": 96,
+      "bst": 809
+    },
+    "dexEntry": "It studies every movement in battle and responds instantly. No attack is wasted, and no opening is missed.",
+    "sprite": "/sprites/striketheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 125,
+    "dexNum": "125",
+    "name": "Originatheon",
+    "species": "Origin Form Pokemon",
+    "type1": "Dragon",
+    "type2": "Normal",
+    "ability1": "Multiscale",
+    "ability2": "Pressure",
+    "abilityHidden": "Protean",
+    "height": "7'01\"",
+    "weight": "286.9 lb",
+    "stats": {
+      "hp": 91,
+      "atk": 130,
+      "def": 103,
+      "spAtk": 165,
+      "spDef": 150,
+      "spd": 110,
+      "bst": 749
+    },
+    "dexEntry": "It is said to contain all possible forms within itself. Its presence alone causes subtle shifts in the surrounding world.",
+    "sprite": "/sprites/originatheon.png",
+    "evolvesFrom": "Mimettle",
+    "evolvesTo": [],
+    "evoMethods": []
+  },
+  {
+    "id": 126,
+    "dexNum": "126",
+    "name": "Fabletheon",
+    "species": "Mythform Pokemon",
+    "type1": "Fairy",
+    "type2": "Normal",
+    "ability1": "Pixilate",
+    "ability2": "Serene Grace",
+    "abilityHidden": "Protean",
+    "height": "5'06\"",
+    "weight": "84.2 lb",
+    "stats": {
+      "hp": 110,
+      "atk": 120,
+      "def": 115,
+      "spAtk": 130,
+      "spDef": 90,
+      "spd": 126,
+      "bst": 691
+    },
+    "dexEntry": "It weaves subtle illusions that influence the emotions of those nearby. Many are drawn to it without understanding why.",
+    "sprite": "/sprites/fabletheon.png",
+    "evolvesFrom": "Mimettle",
     "evolvesTo": [],
     "evoMethods": []
   }
